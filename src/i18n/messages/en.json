@@ -1,5 +1,17 @@
 {
-    "Example": {
-      "title": "Hello world!"
-    }
+  "1-2-2": { "callYou": "TRANSLATEcallYou", "next": "TRANSLATEถัดไป" },
+  "1-2-5": { "whereAreYou": "TRANSLATEwhereAreYou" },
+  "1-2-6": {
+    "dontSee": "TRANSLATEดูเหมือนเขาจะไม่เห็นคุณนะ เกิดอะไรขึ้น จำอะไรได้บ้างมั้ย"
+  },
+  "1-3-3": { "areYouHere": "TRANSLATEอยู่ที่นี่รึเปล่า" },
+  "1-3-6": { "diaryHere": "TRANSLATEเอ๊ะ เหมือนจะมี Diary วางอยู่ด้วย" },
+
+  "Example": {
+    "title": "Hello world!"
+  },
+
+  "NextButton": {
+    "next": "TRANSLATEแตะเพื่อไปต่อ"
   }
+}

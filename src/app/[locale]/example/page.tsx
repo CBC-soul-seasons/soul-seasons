@@ -4,9 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-type Props = {};
-
-const Page = (props: Props) => {
+const Page = () => {
   const t = useTranslations("Example");
 
   return (
