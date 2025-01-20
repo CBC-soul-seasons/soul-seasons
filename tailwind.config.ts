@@ -9,7 +9,19 @@ export default {
   ],
   theme: {
   	extend: {
+		backgroundImage: {
+			'linear-radial-gradient': `
+          linear-gradient(0deg, var(--white, #FFFFFF), var(--white, #FFFFFF)),
+          radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.2) 100%)
+        `,
+
+		},
+		background:{
+			
+		},
+		
   		colors: {
+			primaryblue: '#182649',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -49,14 +61,31 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		},
-  		borderRadius: {
+			},
+		},
+		fontFamily: {
+			th: ['Kanit', 'sans-serif'],
+			en: ['"Source Serif 4"', 'serif']
+		},
+		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+			'dissolve': 'dissolve 0.3s ease-out',
+			'rotate' : 'rotate 1s linear ',
+			'dissolve_slow': 'dissolve 2s ease-out',
+		},
+		
+		keyframes: {
+			dissolve: {
+				'0%': { "opacity": "0" },
+			  '100%': {"opacity": "1" },
+			},
+		}
   	}
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
