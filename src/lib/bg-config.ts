@@ -173,7 +173,11 @@ export const backgroundMapConfig = {
     imagePreload: ["/background/3-1-1.png"],
   },
   "2-7": {
-    image: ["/background/2-1.webp", "/background/2-2.webp", "/background/2-3.webp"],
+    image: [
+      "/background/2-1.webp",
+      "/background/2-2.webp",
+      "/background/2-3.webp",
+    ],
     stopMotionDuration: 1200,
     imagePreload: [],
   },
@@ -251,4 +255,4 @@ export const backgroundMapConfig = {
     stopMotionDuration: 1000,
     imagePreload: [],
   },
-} as const
+} as const;

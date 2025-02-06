@@ -1,10 +1,10 @@
-import { create } from "zustand"
-import { persist } from "zustand/middleware"
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 type State = {
-  isPlaying: boolean
-  toggle: () => void
-}
+  isPlaying: boolean;
+  toggle: () => void;
+};
 
 export const useSoundStore = create(
   persist<State>(
@@ -16,4 +16,4 @@ export const useSoundStore = create(
       name: "sound",
     }
   )
-)
+);

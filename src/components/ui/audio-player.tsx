@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useSoundStore } from "@/store/sound"
-import { forwardRef, useRef } from "react"
-import ReactHowler, { PropTypes } from "react-howler"
+import { useSoundStore } from "@/store/sound";
+import { forwardRef, useRef } from "react";
+import ReactHowler, { PropTypes } from "react-howler";
 
-type Ref = ReactHowler
+type Ref = ReactHowler;
 
 const AudioPlayer = forwardRef<Ref, PropTypes>((props, ref) => {
-  const { isPlaying } = useSoundStore()
-  const internalRef = useRef<ReactHowler>(null)
+  const { isPlaying } = useSoundStore();
+  const internalRef = useRef<ReactHowler>(null);
 
   if (ref) {
     if (typeof ref === "function") {
-      ref(internalRef.current)
+      ref(internalRef.current);
     } else {
-      ref.current = internalRef.current
+      ref.current = internalRef.current;
     }
   }
 
@@ -25,14 +25,14 @@ const AudioPlayer = forwardRef<Ref, PropTypes>((props, ref) => {
       ref={internalRef}
       onPlay={(soundId) => {
         if (props.onPlay) {
-          props.onPlay(soundId)
+          props.onPlay(soundId);
         }
-        internalRef.current?.howler.fade(0, props.volume ?? 0.75, 1000)
+        internalRef.current?.howler.fade(0, props.volume ?? 0.75, 1000);
       }}
     />
-  )
-})
+  );
+});
 
-AudioPlayer.displayName = "AudioPlayer"
+AudioPlayer.displayName = "AudioPlayer";
 
-export default AudioPlayer
+export default AudioPlayer;

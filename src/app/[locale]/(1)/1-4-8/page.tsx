@@ -1,11 +1,11 @@
-"use client"
-import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink"
-import { getLocalStorageWithFallback } from "@/lib/localstorageUtils"
-import { motion } from "framer-motion"
-import React from "react"
+"use client";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
+import { getLocalStorageWithFallback } from "@/lib/localstorageUtils";
+import { motion } from "framer-motion";
+import React from "react";
 
 const Scene1_4Page8: React.FC = () => {
-  const goal = getLocalStorageWithFallback("goal", "")
+  const goal = getLocalStorageWithFallback("goal", "");
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
@@ -14,7 +14,8 @@ const Scene1_4Page8: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         Goals!
       </motion.div>
       <motion.div
@@ -22,12 +23,13 @@ const Scene1_4Page8: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         {goal}
       </motion.div>
       <DelayedFullScreenLink href="1-4-9" delay={2000} />
     </div>
-  )
-}
+  );
+};
 
-export default Scene1_4Page8
+export default Scene1_4Page8;

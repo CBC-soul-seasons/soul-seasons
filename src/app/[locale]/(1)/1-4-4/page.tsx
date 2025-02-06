@@ -1,11 +1,11 @@
-"use client"
-import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink"
-import { motion } from "framer-motion"
-import { useTranslations } from "next-intl"
-import React from "react"
+"use client";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 const Scene1_4Page4: React.FC = () => {
-  const t = useTranslations("1-4-4")
+  const t = useTranslations("1-4-4");
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
@@ -14,7 +14,8 @@ const Scene1_4Page4: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         <div className="flex h-[135px] w-full">
           <div className="items-cemter flex h-full w-full flex-col justify-center">
             <p className="text-center text-lg text-white font-light whitespace-break-spaces drop-shadow">
@@ -28,7 +29,8 @@ const Scene1_4Page4: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         Day 0:
       </motion.div>
       <motion.div
@@ -36,12 +38,13 @@ const Scene1_4Page4: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         {t("planting")}
       </motion.div>
       <DelayedFullScreenLink href="1-4-5" delay={2000} />
     </div>
-  )
-}
+  );
+};
 
-export default Scene1_4Page4
+export default Scene1_4Page4;

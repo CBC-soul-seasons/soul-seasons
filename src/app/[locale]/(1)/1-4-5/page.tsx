@@ -1,7 +1,7 @@
-"use client"
-import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink"
-import { motion } from "framer-motion"
-import React from "react"
+"use client";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
+import { motion } from "framer-motion";
+import React from "react";
 
 const Scene1_4Page5: React.FC = () => {
   return (
@@ -11,12 +11,13 @@ const Scene1_4Page5: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         Goals!
       </motion.div>
       <DelayedFullScreenLink href="1-4-6" delay={2000} />
     </div>
-  )
-}
+  );
+};
 
-export default Scene1_4Page5
+export default Scene1_4Page5;

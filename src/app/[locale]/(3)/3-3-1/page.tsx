@@ -1,14 +1,14 @@
-"use client"
-import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink"
-import { getLocalStorageWithFallback } from "@/lib/localstorageUtils"
-import { motion } from "framer-motion"
-import { useTranslations } from "next-intl"
-import React from "react"
+"use client";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
+import { getLocalStorageWithFallback } from "@/lib/localstorageUtils";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 const Scene3_3Page1: React.FC = () => {
-  const t = useTranslations("3-3-1")
+  const t = useTranslations("3-3-1");
 
-  const name = getLocalStorageWithFallback("name", t("name"))
+  const name = getLocalStorageWithFallback("name", t("name"));
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
@@ -17,7 +17,8 @@ const Scene3_3Page1: React.FC = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}>
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         <div className="flex h-auto w-full px-6">
           <div className="items-cemter flex h-full w-full flex-col justify-center">
             <p className="text-center text-lg text-white font-light whitespace-break-spaces drop-shadow">
@@ -28,7 +29,7 @@ const Scene3_3Page1: React.FC = () => {
       </motion.div>
       <DelayedFullScreenLink href="3-3-2" delay={2000} />
     </div>
-  )
-}
+  );
+};
 
-export default Scene3_3Page1
+export default Scene3_3Page1;

@@ -3,13 +3,13 @@ description: Sets up Node.js and pnpm with caching and installs dependencies.
 
 inputs:
   node-version:
-    description: 'Node.js version to use'
+    description: "Node.js version to use"
     required: true
   pnpm-version:
-    description: 'pnpm version to install'
+    description: "pnpm version to install"
     required: true
   project-dir:
-    description: 'Project directory to install dependencies'
+    description: "Project directory to install dependencies"
     required: true
 
 runs:
@@ -27,14 +27,14 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
-        cache: 'pnpm'
+        cache: "pnpm"
         cache-dependency-path: ${{ inputs.project-dir }}/pnpm-lock.yaml
 
     - name: Verify pnpm Installation
       run: pnpm --version
-      shell: bash  
+      shell: bash
 
     - name: Install Dependencies
       run: pnpm install
       working-directory: ${{ inputs.project-dir }}
-      shell: bash 
+      shell: bash
