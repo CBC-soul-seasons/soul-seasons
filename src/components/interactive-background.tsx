@@ -14,6 +14,28 @@ const InteractiveBackground = () => {
   const { backgroundState } = useBackgroundStore();
   useEffect(() => {
     switch (page) {
+      case "3-2-2":
+      case "3-2-3":
+      case "3-2-4":
+      case "3-2-5":
+      case "3-2-6":
+      case "3-2-7":
+      case "3-2-8":
+      case "3-2-9":
+      case "3-2-10":
+      case "3-2-11":
+        let imageIndex = 0; // Track the current image index
+        const stopMotionInterval = setInterval(() => {
+          // Update the background image
+          setBgImgSrc(backgroundMapConfig[page].image[imageIndex]);
+
+          // Move to the next image, looping back to the start if necessary
+          imageIndex =
+            (imageIndex + 1) % backgroundMapConfig[page].image.length;
+        }, backgroundMapConfig[page].stopMotionDuration);
+
+        // Clear interval when component unmounts (optional cleanup)
+        return () => clearInterval(stopMotionInterval);
       case "1-4-9":
         backgroundMapConfig[page].image.forEach(
           (image: SetStateAction<string | undefined>, index: number) => {

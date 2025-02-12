@@ -80,7 +80,71 @@
       "s4": "Learning patience through seasons' plays."
     }
   },
-  
+  "0-7-1": {
+    "p1": {
+      "s1": "You: \"Finally, it's finished\""
+    }
+  },
+  "0-7-2": {
+    "p1": {
+      "s1": "You: \"Finally, it's finished\"",
+      "s2": "...: \"I'm quite exhauseted,",
+      "s3": "but it was truly enjoyable.\""
+
+    }
+  },
+  "0-7-3": {
+    "p1": {
+      "s1": "You: \"Finally, it's finished\"",
+      "s2": "...: \"I'm quite exhauseted,",
+      "s3": "but it was truly enjoyable.\"",
+      "s4": "...: \"Thank you for inviting me\"",
+      "s5": "to plant a tree together."
+    }
+  },
+  "0-7-4": {
+    "p1": {
+      "s1": "You: \"You’re welcome.",
+      "s2": "I hope it grows strong and healthy.\"",
+      "s3": "...: \"I'm quite exhauseted,",
+      "s4": "but it was truly enjoyable.\"",
+      "s5": "...: \"Thank you for inviting me\"",
+      "s6": "to plant a tree together."
+    }
+  },
+  "0-7-5": {
+    "p1": {
+      "s1": "You: \"You’re welcome.",
+      "s2": "I hope it grows strong and healthy.\"",
+      "s3": "...: \"Let’s make it a point to come back and",
+      "s4": "take care of it regularly—it would also",
+      "s5": "be a nice way for us to stay in touch.\"",
+      "s6": "...: \"Thank you for inviting me\"",
+      "s7": "to plant a tree together.\""
+    }
+  },
+  "0-7-6": {
+    "p1": {
+      "s1": "You: \"You’re welcome.",
+      "s2": "I hope it grows strong and healthy.\"",
+      "s3": "...: \"Let’s make it a point to come back and",
+      "s4": "take care of it regularly—it would also",
+      "s5": "be a nice way for us to stay in touch.\"",
+      "s6": "You: \"That sounds like a great idea.",
+      "s7": "See you then.\""
+    }
+  },
+  "0-7-7": {
+    "p1": {
+      "s1": "",
+      "s2": "",
+      "s3": "",
+      "s4": "",
+      "s5": "",
+      "s6": "You: \"That sounds like a great idea.",
+      "s7": "See you then.\""
+    }
+  },
   "1-2-1": {
     "name": "You",
     "importantPerson": "Someone important"
@@ -126,6 +190,91 @@
   "1-4-6": {
     "whatIsAGoal": "What is a goal you are currently\nworking on but haven’t achieved yet?"
   },
+  "2-1-1": {
+    "p1": {
+      "s1": "\"Finally,",
+      "s2": "we're done. This already looks",
+      "s3": "like a Christmas tree.\""
+    },
+    "importantPerson": "Important Person"
+  },
+  "2-1-2": {
+    "p1": {
+      "s1": "\"The tree",
+      "s2": "has grown so much, hasn’t it?\""
+    },
+    "importantPerson": "Important Person"
+  },
+  "2-1-3": {
+    "p1": {
+      "s1": "\"By the way,",
+      "s2": "New Year is coming. Is there any",
+      "s3": "goal you’ve set but haven’t",
+      "s4": "achieved yet?\""
+    },
+    "importantPerson": "Important Person"
+  },
+  "2-1-4": {
+    "p1": {
+      "s1": ""
+    },
+    "name": "You",
+    "goal": "\"The goal user's just answered in Autumn.\""
+  },
+  "2-1-5": {
+    "p1": {
+      "s1": "\"Speaking of ",
+      "s2": "that... what’s your inspiration behind",
+      "s3": "that goal?"
+    },
+    "importantPerson": "Important Person"
+
+  },
+  "2-1-6": {
+    "p1": {
+      "s1": "\"Hmm... is it really",
+      "s2": "that important?\""
+    },
+    "name": "UserName"
+  },
+  "2-1-7": {
+    "p1": {
+      "s1": "\"Of course, it",
+      "s2": "is. Do you know that growing a",
+      "s3": "tree is just like accomplishing",
+      "s4": "a goal?\""
+    },
+    "importantPerson": "Important Person"
+  },
+  "2-1-8": {
+    "p1": {
+      "s1": "\"Motivation",
+      "s2": "is like high-quality fertilizer that",
+      "s3": "nourishes a tree, helping it grow",
+      "s4": "strong and beautiful.\""
+    },
+    "importantPerson": "Important Person"
+  },
+  "2-1-9": {
+    "p1": {
+      "s1": "\"Motivation",
+      "s2": "is like high-quality fertilizer that",
+      "s3": "nourishes a tree, helping it grow",
+      "s4": "strong and beautiful.",
+      "s5" : "Similarly, it nurtures the mind",
+      "s6" : "and pushes us to grow",
+      "s7" : "meaningfully.\""
+    },
+    "importantPerson": "Important Person"
+
+  },
+  "2-1-10": {
+    "p1": {
+      "s1": "\"I see... I may need",
+      "s2": "to find my own motivation now.\""
+    },
+    "name": "UserName"
+  },
   "2-2-1": {
     "p1":{
       "s1":"What is the motivation behind your goal? ",
@@ -151,6 +300,23 @@
  "2-3-2": {
     "importantPerson": "Important Person",
     "ifYouKnow": "Now that you know this... best of luck!"
+  },
+  "3-2-2": {
+    "p1": {
+      "s1": "Close your eyes",
+      "s2": "and listen to your heartbeat.",
+      "s3": "Let yourself face the fear hidden",
+      "s4": "deep within."
+    }
+  },
+  "3-2-3": {
+    "p1": {
+      "s1": "Press on the screen...",
+      "s2": "Let each raindrop carry away the fear",
+      "s3": "hidden in your heart.",
+      "s4": "No matter how heavy your fear feels, keep",
+      "s5": "going until your spirit feels lighter."
+    }
   },
   "3-1-2":{
     "p1":{

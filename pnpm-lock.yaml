@@ -42,7 +42,7 @@ importers:
         specifier: ^4.1.4
         version: 4.1.4(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.18.0(jiti@1.21.7))(typescript@5.7.3))(eslint@9.18.0(jiti@1.21.7))
       framer-motion:
-        specifier: ^11.16.4
+        specifier: ^11.18.0
         version: 11.18.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       globals:
         specifier: ^15.14.0
