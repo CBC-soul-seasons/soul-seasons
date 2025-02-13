@@ -115,8 +115,8 @@
     "importantPerson": "Someone important"
   },
   "1-4-2": {
-    "name": "You",
-    "importantPerson": "Someone important"
+    "name": "คุณ",
+    "importantPerson": "คนสำคัญ"
   },
 
   "1-4-4": {
@@ -135,8 +135,18 @@
     "btn": "Next"
   },
   "2-2-2": {
-    "p1": {
-      "s1": "What is the motivation behind your goal? ",
+    "pots": {
+      "career_work": "Career/Work",
+      "family": "Family",
+      "relationship_friends": "Relationship/Friends",
+      "sharing_contributions": "Sharing/Contributions",
+      "self_development": "Self-Development",
+      "finance_money": "Finance/Money",
+      "health": "Health",
+      "spiritual": "Spiritual"
+    },
+    "p1":{
+      "s1":"What is the motivation behind your goal? ",
       "s2": "Help add some fertilizer to your tree.",
       "s3": ""
     },
@@ -282,7 +292,9 @@
   "4-1-13": {
     "remember": "And remember, Just like every time before—this, too, shall pass."
   },
-  "4-1-14": { "dontKnow": "I don’t know if anyone has ever told you this..." },
+  "4-1-14": {
+     "dontKnow": "I don’t know if anyone has ever told you this..." 
+},
   "4-1-15": {
     "wantYouToKnow": "but I need you to know that, despite everything you’ve been through, you’ve blossomed and grown into something truly beautiful. So proud of you. 😊"
   }

@@ -1,53 +1,37 @@
-export const potImagesLeft = [
-  {
-    src: "/icons/pot/potPink.png",
-    label: "Career/Work",
-    pos: "",
-    glow: "/icons/potGlow/potPinkGlow.png",
-  },
-  {
-    src: "/icons/pot/potIndigo.png",
-    label: "Family",
-    pos: "right-[50px]",
-    glow: "/icons/potGlow/potIndigoGlow.png",
-  },
-  {
-    src: "/icons/pot/potRed.png",
-    label: "Relationship/Friends",
-    pos: "right-[50px]",
-    glow: "/icons/potGlow/potRedGlow.png",
-  },
-  {
-    src: "/icons/pot/potOrange.png",
-    label: "Sharing/Contributions",
-    pos: "",
-    glow: "/icons/potGlow/potOrangeGlow.png",
-  },
-];
 
-export const potImagesRight = [
-  {
-    src: "/icons/pot/potBlue.png",
-    label: "Self-Development",
-    pos: "",
-    glow: "/icons/potGlow/potBlueGlow.png",
-  },
-  {
-    src: "/icons/pot/potYellow.png",
-    label: "Finance/Money",
-    pos: "left-[50px]",
-    glow: "/icons/potGlow/potYellowGlow.png",
-  },
-  {
-    src: "/icons/pot/potGreen.png",
-    label: "Health",
-    pos: "left-[50px]",
-    glow: "/icons/potGlow/potGreenGlow.png",
-  },
-  {
-    src: "/icons/pot/potPurple.png",
-    label: "Spiritual",
-    pos: "",
-    glow: "/icons/potGlow/potPurpleGlow.png",
-  },
-];
+import potOrange from '../img/icons/pot/potOrange.png';
+import potPurple from '../img/icons/pot/potPurple.png';
+import potGreen from '../img/icons/pot/potGreen.png';
+import potRed from '../img/icons/pot/potRed.png';
+import potPink from '../img/icons/pot/potPink.png';
+import potYellow from '../img/icons/pot/potYellow.png';
+import potBlue from '../img/icons/pot/potBlue.png';
+import potIndigo from '../img/icons/pot/potIndigo.png';
+
+// Glow pots
+import potIndigoGlow from '../img/icons/potGlow/potIndigoGlow.png';
+import potPurpleGlow from '../img/icons/potGlow/potPurpleGlow.png';
+import potOrangeGlow from '../img/icons/potGlow/potOrangeGlow.png';
+import potRedGlow from '../img/icons/potGlow/potRedGlow.png';
+import potGreenGlow from '../img/icons/potGlow/potGreenGlow.png';
+import potYellowGlow from '../img/icons/potGlow/potYellowGlow.png';
+import potBlueGlow from '../img/icons/potGlow/potBlueGlow.png';
+import potPinkGlow from '../img/icons/potGlow/potPinkGlow.png';
+
+// 🏆 Function to dynamically get pots with translated labels
+export const getPotImages = (t: any) => {
+    return {
+        potImagesleft: [
+            { src: potPink.src, label: t("pots.career_work"), glow: potPinkGlow.src },
+            { src: potIndigo.src, label: t("pots.family"), glow: potIndigoGlow.src },
+            { src: potRed.src, label: t("pots.relationship_friends"), glow: potRedGlow.src },
+            { src: potOrange.src, label: t("pots.sharing_contributions"), glow: potOrangeGlow.src },
+        ],
+        potImagesright: [
+            { src: potBlue.src, label: t("pots.self_development"), glow: potBlueGlow.src },
+            { src: potYellow.src, label: t("pots.finance_money"), glow: potYellowGlow.src },
+            { src: potGreen.src, label: t("pots.health"), glow: potGreenGlow.src },
+            { src: potPurple.src, label: t("pots.spiritual"), glow: potPurpleGlow.src },
+        ],
+    };
+};

@@ -1,0 +1,79 @@
+// const [subConcept, setSubConcept] = useState<string[]>([]);
+    // const [combination,setCombination] = useState<string[]>([]);    
+    // const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    //     const selectedText = (e.currentTarget as HTMLDivElement).innerText;
+    //     setSubConcept((prev) => {
+    //         const newSubConcept = obstacleMapping[selectedText];
+    //         return [...prev, ...(Array.isArray(newSubConcept) ? newSubConcept : [newSubConcept])]; // Add if not already selected
+    //     });
+    // };
+    // return (
+    //     <section className="text-white w-full h-[100vh] flex flex-col justify-center items-center">
+    //         <div className="flex flex-col justify-center items-center">
+    //             {/* Language Toggle */}
+               
+
+    //             {/* Motivation List */}
+    //             <h2 className="text-2xl font-bold mb-4">Motivations</h2>
+    //             <div className="mb-6">
+    //                 {Object.entries(motivationMap)
+    //                     .map(([key, value], index) => (
+    //                         <div key={index} className="">
+    //                             <span
+    //                                 onClick={handleClick}
+    //                                 className="cursor-pointer font-semibold text-yellow-400 hover:underline"
+    //                             >
+    //                                 {key}
+    //                             </span>
+    //                             : {value}
+    //                         </div>
+    //                     ))}
+    //             </div>
+
+    //             {/* Obstacles List */}
+    //             <h2 className="text-2xl font-bold mb-4">Obstacles</h2>
+    //             <div>
+    //                 {Object.entries(obstacleMapping)
+    //                     .map(([key, value], index) => (
+    //                         <div key={index}>
+    //                             <span
+    //                                 onClick={handleClick}
+    //                                 className="cursor-pointer font-semibold text-blue-400 hover:underline"
+    //                             >
+    //                                 {key}
+    //                             </span>
+    //                         </div>
+    //                     ))}
+    //             </div>
+
+    //             {/* Selected Sub-Concepts */}
+    //             <div className="flex flex-col items-center">
+    //                 <h2 className="text-2xl font-bold mt-6">Selected Sub-Concepts</h2>
+    //                 <div className="bg-gray-800 p-4 rounded-md mt-2">
+    //                     {subConcept.length > 0 ? (
+    //                         subConcept.map((item, index) => (
+    //                             <div key={index} className="text-green-300">
+    //                                 {item}
+    //                             </div>
+    //                         ))
+    //                     ) : (
+    //                         <p className="text-gray-400">Click a motivation or obstacle to add it.</p>
+    //                     )}
+    //                 </div>
+    //                 <h2 className="text-2xl font-bold mt-6">Selected Sub-Concepts</h2>
+    //                 <div className="bg-gray-800 p-4 rounded-md mt-2">
+    //                     {subConcept.length > 0 ? (
+    //                         subConcept.map((item, index) => (
+    //                             <div key={index} className="text-green-300">
+    //                                 {item}
+    //                             </div>
+    //                         ))
+    //                     ) : (
+    //                         <p className="text-gray-400">Click a motivation or obstacle to add it.</p>
+    //                     )}
+    //                 </div>
+    //             </div>
+                
+    //         </div>
+        // </section>
+    // );

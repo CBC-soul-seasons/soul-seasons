@@ -13,6 +13,8 @@ const Scene3_1_2 = ()=>{
 
     return () => clearTimeout(timer);
   }, [router]);
+  const importantPerson = localStorage.getItem('importantPerson')
+  const username = localStorage.getItem('name')
     
     return(
         <section className="w-full justify-start items-center h-lvh flex flex-col" 
@@ -25,7 +27,7 @@ const Scene3_1_2 = ()=>{
                 >
                     
                 <p className='w-[279px] h-auto'>
-                    importantPerson : “{t("p1.s1")} username
+                    {importantPerson ? importantPerson : 'importantPerson' } : “{t("p1.s1")} {username ? username : "username"}”
                     <br/>
                     {t("p1.s2")}
                     <br/>
