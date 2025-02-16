@@ -127,15 +127,19 @@ export const backgroundMapConfig: any = {
     stopMotionDuration: 1000,
     imagePreload: [],
   },
-  "2-2-1": {
-    image: ["/background/2-2-1-db.png", "/background/2-2-1-blur.png", "/background/2-2-1.png"],
+  "2-2-1":{
+    image: [
+      "/background/2-2-1-db.png",
+      "/background/2-2-1-blur.png",
+      "/background/2-2-1.png",
+    ],
     stopMotionDuration: 2000,
-    imagePreload: ["/background/2-2-2.png"],
+    imagePreload: ["/background/2-2-2.png"]
   },
-  "2-2-2": {
+  "2-2-2":{
     image: "/background/2-2-2.png",
     stopMotionDuration: 1000,
-    imagePreload: [],
+    imagePreload: []
   },
   "2-2-4": {
     image: "/background/2-2-4.webp",
@@ -205,25 +209,29 @@ export const backgroundMapConfig: any = {
     imagePreload: [],
   },
   "3-1-1": {
-    image: "/background/3-1.gif",
-    imagePreload: [],
-  },
-  "3-1-2": {
-    image: "/background/3-1.gif",
-    imagePreload: [],
-  },
-  "3-1-3": {
-    image: "/background/3-1.gif",
-    imagePreload: [],
-  },
-  "3-1-4": {
-    image: "/background/3-1.gif",
-    imagePreload: [],
-  },
-  "3-1-5": {
-    image: "/background/3-1.gif",
-    imagePreload: [],
-  },
+  image: "/background/3-1.gif",
+  imagePreload: [],
+},
+"3-1-2": {
+  image: "/background/3-1.gif",
+  imagePreload: [],
+},
+"3-1-3": {
+  image: "/background/3-1.gif",
+  imagePreload: [],
+},
+"3-1-4": {
+  image: "/background/3-1.gif",
+  imagePreload: [],
+},
+"3-1-5": {
+  image: "/background/3-1.gif",
+  imagePreload: [],
+},
+"logic":{
+  image: "/background/3-1.gif",
+  imagePreload: [],
+},
   "3-2-11": {
     image: "/background/3-2-11_3.gif",
     imagePreload: ["/background/3-2-11_1.gif", "/background/3-2-11_2.gif"],

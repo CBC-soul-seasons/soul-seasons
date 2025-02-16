@@ -9,8 +9,10 @@ import NextButton from '@/components/ui/NextButton'
 const Scene3_1_5 = () => {
   const [currentGoal, setCurrentGoal] = useState<string[]>([])
   const containerRef = useRef<HTMLDivElement>(null);
-  const t = useTranslations("3-1-5")
 
+  const t = useTranslations("3-1-5")
+  
+  
   // Create an array of translations from p1.s1 to p1.s10.
   const choice = Array.from({ length: 10 }, (_, i) => t(`p1.s${i + 1}`))
 
@@ -101,7 +103,7 @@ onClick={handleClick}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
         className="flex justify-start items-center h-full flex-col mt-10">
-        <NextButton url="/3-1-6" disabled={currentGoal.length < 3} />
+        <NextButton url="/logic" disabled={currentGoal.length < 3} />
       </motion.div>
     </section>
   )

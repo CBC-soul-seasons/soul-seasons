@@ -23,6 +23,7 @@
     "eslint-plugin-unused-imports": "^4.1.4",
     "framer-motion": "^11.16.4",
     "globals": "^15.14.0",
+    "i18next": "^24.2.2",
     "lodash": "^4.17.21",
     "lucide-react": "^0.469.0",
     "next": "15.1.4",

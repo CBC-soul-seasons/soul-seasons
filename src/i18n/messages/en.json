@@ -23,7 +23,7 @@
     },
     "p3": {
       "s1": "If you feel uncomfortable at any point, you may stop immediately because ",
-      "s2": "your emotions come first. "
+      "s2": "your emotions come first."
     },
     "btn": "Noted"
   },
@@ -135,8 +135,18 @@
     "btn": "Next"
   },
   "2-2-2": {
-    "p1": {
-      "s1": "What is the motivation behind your goal? ",
+    "pots": {
+      "career_work": "Career/Work",
+      "family": "Family",
+      "relationship_friends": "Relationship/Friends",
+      "sharing_contributions": "Sharing/Contributions",
+      "self_development": "Self-Development",
+      "finance_money": "Finance/Money",
+      "health": "Health",
+      "spiritual": "Spiritual"
+    },
+    "p1":{
+      "s1":"What is the motivation behind your goal? ",
       "s2": "Help add some fertilizer to your tree.",
       "s3": ""
     },
@@ -192,12 +202,43 @@
       "s10": "I feel overwhelmed by a world that moves too fast."
     }
   },
+  "logic":{
+    "Heart & Home" : "Heart & Home",
+    "Trophies and Triumphs": "Trophies and Triumphs",
+    "Inspiring Flames": "Inspiring Flames",
+    "A Refilled Heart": "A Refilled Heart",
+    "Ribbons and Paper Boxes": "Ribbons and Paper Boxes",
+    "Life’s Canvas": "Life’s Canvas",
+    "chapter":{
+     "start":"start",
+     "middle":"middle",
+      "end":"end"
+    }
+  },
   "3-2-11": {
     "name": "You",
     "stillRaining": "The rain keeps pouring so heavily... How can I make it calm down?"
   },
   "3-2-12": {
     "rainDoll": "Maybe... try tapping on the rain doll?"
+  },
+  "3-3-1": {
+    "name": "You",
+    "why": "“Why... does it feel\nlike the rain will never end?”"
+  },
+  "3-3-2": {
+    "name": "You",
+    "asIf": "“As if...it will keep\nfalling forever.”"
+  },
+  "3-3-3": {
+    "name": "You",
+    "both": "“Both the rain outside...\nand the rain within my heart.”"
+  },
+  "3-3-4": {
+    "perhaps": "Perhaps...this is the moment to\nfinally face your fears"
+  },
+  "3-3-5": {
+    "areYou": "Are you ready to let go of the umbrella\nand walk through the rain to overcome it?"
   },
   "4-1-5": {
     "goodJob": "You’ve been so brave... having the courage to make a decisive step about something you’ve been uncertain about for so long"
@@ -287,9 +328,5 @@
   },
   "6-3-10": {
     "iHope": "I hope you’ll take time to reflect on your\nfeelings and not lose yourself so often."
-  },
-  "6-1-1": {
-    "importantPerson": "Important Person",
-    "sometimes": "Sometimes life has its own timing. Look at this fruit—we shook the tree like crazy, but it just dropped on its own in the end when its time comes."
   }
 }
