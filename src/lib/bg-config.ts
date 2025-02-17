@@ -304,6 +304,30 @@ export const backgroundMapConfig: any = {
     image: "/background/3-1.gif",
     imagePreload: [],
   },
+  "3-2-2": {
+    image: "/background/3-2-11_1.gif",
+    imagePreload: [],
+  },
+  "3-2-3": {
+    image: "/background/3-2-11_1.gif",
+    imagePreload: [],
+  },
+  "3-2-4": {
+    image: "/background/3-2-11_1.gif",
+    imagePreload: [],
+  },
+  "3-2-6": {
+    image: "/background/3-2-11_3.gif",
+    imagePreload: [],
+  },
+  "3-2-7": {
+    image: "/background/3-2-11_3.gif",
+    imagePreload: [],
+  },
+  "3-2-10": {
+    image: "/background/3-2-11_3.gif",
+    imagePreload: [],
+  },
   "3-2-11": {
     image: "/background/3-2-11_3.gif",
     imagePreload: ["/background/3-2-11_1.gif", "/background/3-2-11_2.gif"],

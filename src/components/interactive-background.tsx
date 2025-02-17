@@ -99,6 +99,15 @@ const InteractiveBackground = () => {
           }
         );
         break;
+      case "3-2-4":
+        setBgImgSrc(backgroundState || "/background/3-2-11_1.gif");
+        break;
+      case "3-2-6":
+        setBgImgSrc(backgroundMapConfig[page].image);
+        setTimeout(() => {
+          router.push("3-2-7");
+        }, 2000);
+        break;
       case "3-2-12":
         setBgImgSrc(backgroundState || "/background/3-2-11_3.gif");
         break;
