@@ -447,4 +447,8 @@ export const backgroundMapConfig: any = {
     stopMotionDuration: 1200,
     imagePreload: [],
   },
+  "7-2": {
+    image: "/background/7-2.webp",
+    imagePreload: [],
+  },
 } as const

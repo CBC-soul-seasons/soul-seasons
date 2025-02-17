@@ -11,8 +11,8 @@ const Scene6_3Page6: React.FC = () => {
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
-      {/* <motion.div
-        className="absolute top-[61%]"
+      <motion.div
+        className="absolute bottom-[40%]"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
@@ -20,11 +20,11 @@ const Scene6_3Page6: React.FC = () => {
         <div className="flex h-auto w-full px-6">
           <div className="items-cemter flex h-full w-full flex-col justify-center">
             <p className="text-center text-lg text-white font-light whitespace-break-spaces drop-shadow-text leading-[24.68px]">
-              {t("andAt")}
+              {t("couldYou")}
             </p>
           </div>
         </div>
-      </motion.div> */}
+      </motion.div>
       <motion.div
         className="absolute top-[61%] w-full"
         initial={{ opacity: 0, y: 0 }}

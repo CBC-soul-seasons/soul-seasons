@@ -276,6 +276,9 @@
   "6-3-5": {
     "andAt": "And at this moment, how much stress or\nworry do you feel in your mind?\n1 being the least - 10 being the most"
   },
+  "6-3-6": {
+    "couldYou": "Could you share the reason\nbehind your rating?"
+  },
   "6-3-7": {
     "iSee": "I see now. So, this is how you’ve been\nfeeling. But no matter how you feel right\nnow, the most important thing is that\nyou’ve come to understand your own\nfeelings."
   },
