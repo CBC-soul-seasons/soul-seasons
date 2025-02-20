@@ -5,10 +5,12 @@ import { useLocale } from "next-intl";
 import React, { useEffect, useState } from "react";
 import NextButton from "@/components/ui/NextButton";
 import { Share2 } from "lucide-react";
+import { useCalculation } from "@/lib/calculation";
 
 const Scene7_2: React.FC = () => {
   const locale = useLocale();
   const [result, setResult] = useState<string>();
+  const { seasons, chapter } = useCalculation();
   const DOWNLOAD_FILENAME = "results.jpeg";
 
   const shareImage = async () => {
@@ -36,35 +38,24 @@ const Scene7_2: React.FC = () => {
   useEffect(() => {
     // const parser = new UAParser(navigator.userAgent)
     // setUserAgentData(parser.getDevice().model)
-    setResult(`/img/results-${locale}/D 7-2-1-1.webp`);
-    // get results
-
-    // switch (score) {
-    //   case 1:
-    //     setPostcardNo("1");
-    //     break;
-    //   case 2:
-    //   case 3:
-    //     setPostcardNo("2");
-    //     break;
-    //   case 4:
-    //   case 5:
-    //     setPostcardNo("3");
-    //     break;
-    //   case 6:
-    //     setPostcardNo("4");
-    //     break;
-    //   case 7:
-    //     setPostcardNo("5");
-    //     break;
-    //   case 8:
-    //   case 9:
-    //     setPostcardNo("6");
-    //     break;
-    //   case 10:
-    //     setPostcardNo("7");
-    // }
-  }, []);
+    const chapterNumber =
+      chapter === "start" ? "1" : chapter === "end" ? "3" : "2";
+    const seasonsNumber =
+      seasons === "Inspiring Flames"
+        ? "1"
+        : seasons === "Life’s Canvas"
+          ? "2"
+          : seasons === "Heart & Home"
+            ? "3"
+            : seasons === "Ribbons and Paper Boxes"
+              ? "4"
+              : seasons === "Trophies and Triumphs"
+                ? "5"
+                : "6";
+    setResult(
+      `/img/results-${locale}/D 7-2-${seasonsNumber}-${chapterNumber}.webp`
+    );
+  }, [seasons, chapter]);
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">

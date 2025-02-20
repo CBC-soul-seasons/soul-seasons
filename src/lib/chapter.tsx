@@ -5,7 +5,7 @@ type SortedWeight = {
   weight: number;
 };
 
-const Chapter = (sortedWeights: SortedWeight[]): string => {
+const Chapter = (sortedWeights: SortedWeight[]) => {
   // Separate items into Motivation and Obstacle (case-insensitive)
   const motivationWeights = sortedWeights.filter(
     (item) => item.category.toLowerCase() === Category.Motivation

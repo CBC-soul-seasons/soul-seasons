@@ -28,7 +28,7 @@ const Scene3_1_5 = () => {
     });
   };
   useEffect(() => {
-    return localStorage.setItem("goal", JSON.stringify(currentGoal));
+    return localStorage.setItem("currentGoal", JSON.stringify(currentGoal));
   }, [currentGoal]);
 
   // Detect scrolling to update the selected choice

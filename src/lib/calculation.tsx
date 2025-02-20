@@ -34,7 +34,7 @@ export const useCalculation = () => {
   // Effect to load data from localStorage once on mount.
   useEffect(() => {
     const storedMotivation = localStorage.getItem("motivationGoal");
-    const storedObstacles = localStorage.getItem("goal");
+    const storedObstacles = localStorage.getItem("currentGoal");
     const speedClicked = localStorage.getItem("speed");
 
     if (storedMotivation) {
