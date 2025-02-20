@@ -67,6 +67,134 @@ export const backgroundMapConfig: any = {
     image: "/background/0-7-1.png",
     imagePreload: [],
   },
+  "0-8-1": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-2": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-3": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-4": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-5": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-6": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-7": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-8": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-9": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-10": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-11": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-12": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-13": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-14": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-15": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-16": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-17": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-18": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-19": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-20": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-21": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-22": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-23": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-24": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-25": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-26": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-27": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-28": {
+    image: "/0-8/0-8-bg.webp",
+    imagePreload: [],
+  },
+  "0-8-29": {
+    image: "/0-8/0-8-29.png",
+    imagePreload: [],
+  },
+  "0-8-30": {
+    image: "/0-8/0-8-30.png",
+    imagePreload: [],
+  },
+  "1-1-1": {
+    image: "/0-8/0-8-30.png",
+    imagePreload: [],
+  },
+  "1-1-2": {
+    image: "/0-8/0-8-30.png",
+    imagePreload: [],
+  },
   "1-1-3": {
     image: "/background/1-1-3.png",
     imagePreload: [],
