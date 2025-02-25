@@ -189,6 +189,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     image: "/background/1-2.webp",
     imagePreload: ["/background/1-3-1.png"],
   },
+  // TODO : Fix weird color for 1-3
   "1-3-1": {
     image: "/background/1-3-1.png",
     imagePreload: [
