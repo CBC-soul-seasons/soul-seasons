@@ -3,20 +3,28 @@ import Bar from "@/components/ui/bar";
 import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
 import NextDisplay from "@/components/ui/nextDisplay";
 import { getLocalStorageWithFallback } from "@/lib/localstorageUtils";
+import { getDynamicFontSize } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { useState, useEffect } from "react";
 
 const Page7_1_7_1 = () => {
   const t = useTranslations("7-1-7");
-
+  const locale = useLocale();
   const goal = getLocalStorageWithFallback("currentGoal", "Inspiring flame");
+  const translatedText = t(`1.${goal}`);
+  const [textSize, setTextSize] = useState("1.25rem");
+
+  useEffect(() => {
+    setTextSize(getDynamicFontSize(locale, translatedText.length));
+  }, [translatedText, locale]);
 
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
-      <motion.div className="text-center absolute top-[37%] right-[20%] w-1/2">
+      <motion.div className="flex flex-col gap-4 text-center absolute top-[35%] right-[13%] w-2/3">
         <Bar stressScore={1} showLabel={false} />
         <span className="font-semibold text-xl">{t("earlySeason")}</span>
-        <p>{t(`1.${goal}`)}</p>
+        <p style={{ fontSize: textSize }}>{translatedText}</p>
       </motion.div>
 
       <motion.div
@@ -28,7 +36,7 @@ const Page7_1_7_1 = () => {
         }}
         exit={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="flex justify-center absolute top-[85%] inset-x-0"
+        className="flex justify-center absolute top-[90%] inset-x-0"
       >
         <NextDisplay />
       </motion.div>
