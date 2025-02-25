@@ -145,7 +145,7 @@ export default tsEslint.config(
       "no-caller": "error",
       "no-cond-assign": "error",
       "no-console": [
-        "error",
+        "warn",
         {
           allow: [
             "warn",

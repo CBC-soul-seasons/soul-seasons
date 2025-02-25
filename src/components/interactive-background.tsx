@@ -2,7 +2,7 @@
 
 import { backgroundMapConfig } from "@/lib/bg-config";
 import { usePathname, useRouter } from "@/i18n/routing";
-import { SetStateAction, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import AnimatedImage from "./animated-image";
 import { useBackgroundStore } from "@/store/background";
 
@@ -10,174 +10,61 @@ const InteractiveBackground = () => {
   const path = usePathname();
   const router = useRouter();
   const page = path.split("/")[1] as keyof typeof backgroundMapConfig;
-  const [bgImgSrc, setBgImgSrc] = useState<string>();
+  const [bgImgSrc, setBgImgSrc] = useState<string | undefined>();
   const { backgroundState } = useBackgroundStore();
+
   useEffect(() => {
-    switch (page) {
-      case "1-3-2":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("1-3-6");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "1-4-9":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("2-1-1");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "2-2-1":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("2-2-2");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "2-3-5":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("3-1-1");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
+    if (!backgroundMapConfig[page]) {
+      return;
+    }
 
-      case "2-7":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("2-8");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "2-9":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("2-10");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "3-2-4":
-        setBgImgSrc(backgroundState || "/background/3-2-11_1.gif");
-        break;
-      case "3-2-6":
-        setBgImgSrc(backgroundMapConfig[page].image);
-        setTimeout(() => {
-          router.push("3-2-7");
-        }, 2000);
-        break;
-      case "3-2-12":
-        setBgImgSrc(backgroundState || "/background/3-2-11_3.gif");
-        break;
-      case "3-3-7":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("4-1-1");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "4-1-1":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("4-1-4");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "4-1-16":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("5-1-1");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
-      case "6-1-2":
-        backgroundMapConfig[page].image.forEach(
-          (image: SetStateAction<string | undefined>, index: number) => {
-            setTimeout(() => {
-              setBgImgSrc(image);
-              if (index === backgroundMapConfig[page].image.length - 1) {
-                setTimeout(() => {
-                  router.push("6-2-1");
-                }, backgroundMapConfig[page].stopMotionDuration / 2);
-              }
-            }, index * backgroundMapConfig[page].stopMotionDuration);
-          }
-        );
-        break;
+    const config = backgroundMapConfig[page];
 
-      default:
-        setBgImgSrc(backgroundMapConfig[page].image);
-        break;
+    // Handle stop-motion animation
+    if (Array.isArray(config.image)) {
+      animateSequence(config.image, config.stopMotionDuration || 1000, () => {
+        if (config.redirectTo) {
+          router.push(config.redirectTo);
+        }
+      });
+    }
+    // Handle static backgrounds with redirect
+    else if (config.redirectTo) {
+      setBgImgSrc(config.image);
+      setTimeout(() => {
+        router.push(config.redirectTo as string);
+      }, config.stopMotionDuration || 2000);
+    }
+    // Handle backgrounds that require Zustand `backgroundState`
+    else if (config.useBackgroundState) {
+      setBgImgSrc(backgroundState || config.image);
+    }
+    // Handle static backgrounds without redirects
+    else {
+      setBgImgSrc(config.image);
     }
   }, [page, router, backgroundState]);
 
-  const imagePreloadSrc = useMemo(() => {
-    const newImagePreloadSrc = backgroundMapConfig[page].imagePreload;
-    return newImagePreloadSrc;
-  }, [page]);
+  const animateSequence = (
+    images: string[],
+    duration: number,
+    callback?: () => void
+  ) => {
+    images.forEach((image, index) => {
+      setTimeout(() => {
+        setBgImgSrc(image);
+        if (index === images.length - 1 && callback) {
+          setTimeout(callback, duration / 2);
+        }
+      }, index * duration);
+    });
+  };
+
+  const imagePreloadSrc = useMemo(
+    () => backgroundMapConfig[page]?.imagePreload,
+    [page]
+  );
+
   return (
     <>
       {bgImgSrc && (

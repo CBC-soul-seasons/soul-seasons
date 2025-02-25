@@ -5,10 +5,28 @@ import { useLocale } from "next-intl";
 import React, { useEffect, useState } from "react";
 import NextButton from "@/components/ui/NextButton";
 import { Share2 } from "lucide-react";
+import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
+import { Season, Chapter } from "@/lib/enum";
+
+const chapterMap: Record<Chapter, string> = {
+  [Chapter.Start]: "1",
+  [Chapter.Middle]: "2",
+  [Chapter.End]: "3",
+};
+
+const seasonMap: Record<Season, string> = {
+  [Season.InspiringFlames]: "1",
+  [Season.LifesCanvas]: "2",
+  [Season.HeartAndHome]: "3",
+  [Season.RibbonsAndPaperBoxes]: "4",
+  [Season.TrophiesAndTriumphs]: "5",
+  [Season.ARefilledHeart]: "6",
+};
 
 const Scene7_2: React.FC = () => {
   const locale = useLocale();
   const [result, setResult] = useState<string>();
+  const { seasons, chapter } = useLogicCalculation();
   const DOWNLOAD_FILENAME = "results.jpeg";
 
   const shareImage = async () => {
@@ -34,37 +52,11 @@ const Scene7_2: React.FC = () => {
   };
 
   useEffect(() => {
-    // const parser = new UAParser(navigator.userAgent)
-    // setUserAgentData(parser.getDevice().model)
-    setResult(`/img/results-${locale}/D 7-2-1-1.webp`);
-    // get results
+    const seasonsNo = seasons ? seasonMap[seasons] : "1";
+    const chapterNo = chapter ? chapterMap[chapter] : "middle";
 
-    // switch (score) {
-    //   case 1:
-    //     setPostcardNo("1");
-    //     break;
-    //   case 2:
-    //   case 3:
-    //     setPostcardNo("2");
-    //     break;
-    //   case 4:
-    //   case 5:
-    //     setPostcardNo("3");
-    //     break;
-    //   case 6:
-    //     setPostcardNo("4");
-    //     break;
-    //   case 7:
-    //     setPostcardNo("5");
-    //     break;
-    //   case 8:
-    //   case 9:
-    //     setPostcardNo("6");
-    //     break;
-    //   case 10:
-    //     setPostcardNo("7");
-    // }
-  }, []);
+    setResult(`/img/results-${locale}/D 7-2-${seasonsNo}-${chapterNo}.webp`);
+  }, [seasons, chapter]);
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">

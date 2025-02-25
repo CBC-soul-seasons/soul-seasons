@@ -1,5 +1,5 @@
 "use client";
-import { useCalculation } from "../../../../lib/calculation"; // Custom hook for calculations
+import { useLogicCalculation } from "../../../../lib/logicCalculation/logicCalculation"; // Custom hook for calculations
 import { useTranslations } from "next-intl";
 const Logic = () => {
   const t = useTranslations("");
@@ -9,7 +9,7 @@ const Logic = () => {
     sortedSubConcepts,
     seasons,
     chapter,
-  } = useCalculation();
+  } = useLogicCalculation();
   return (
     <section className="w-full justify-center text-white items-center h-lvh flex flex-col">
       {/* Render the calculated Sub-Concept Motivation */}

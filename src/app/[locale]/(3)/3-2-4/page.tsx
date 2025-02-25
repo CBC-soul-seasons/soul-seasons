@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useBackgroundStore } from "@/store/background";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter
 
 const Page3_2_4 = () => {
@@ -12,7 +12,8 @@ const Page3_2_4 = () => {
   const [soFarBGNum, setSoFarBGNum] = useState<0 | 1 | 2>(0);
   const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
   const [isTransparent, setIsTransparent] = useState(false);
-  let startTime = 0;
+  const startTime = useRef(0);
+  const stopWatchForAnimation = useRef(0);
 
   const bgOrder = {
     0: "/background/3-2-11_1.gif",
@@ -27,17 +28,19 @@ const Page3_2_4 = () => {
   const handleMouseDown = () => {
     setIsTransparent(true);
 
-    startTime = Date.now();
+    localStorage.setItem("speed", "6");
+    startTime.current = Date.now();
+    stopWatchForAnimation.current = Date.now();
     if (timeoutId) {
       clearTimeout(timeoutId);
       setTimeoutId(null);
     }
 
     const id = setInterval(() => {
-      const duration = Date.now() - startTime;
+      const duration = Date.now() - stopWatchForAnimation.current;
       if (duration > 2000) {
         nextBG();
-        startTime = Date.now();
+        stopWatchForAnimation.current = Date.now();
       }
     }, 100);
 
@@ -55,7 +58,8 @@ const Page3_2_4 = () => {
       setTimeoutId(null);
     }
 
-    localStorage.setItem("speed", String((Date.now() - startTime) / 1000));
+    const seconds = (Date.now() - startTime.current) / 1000;
+    localStorage.setItem("speed", String(seconds));
 
     if (soFarBGNum === 0) {
       const id1 = setTimeout(() => {

@@ -56,7 +56,7 @@ const AnimatedImage = ({
           <Image src={currentSrc} alt={alt} {...props} />
         </motion.div>
       </AnimatePresence>
-      {preloadSrcs.map((source: string | StaticImport) => (
+      {preloadSrcs?.map((source: string | StaticImport) => (
         <Image
           key={`preload-${source}`}
           src={source}

@@ -1,43 +1,32 @@
-import { Categories } from "./enum";
-type SortedWeight = {
-  category: Category;
-  subConcept: Categories;
-  weight: number;
-};
-enum Category {
-  Motivation = "Motivation",
-  Obstacle = "Obstacle",
-}
+import { Categories, Season } from "../enum";
+import { WeightedSubConcept } from "../types";
 
-const Season = (sortedWeights: SortedWeight[]) => {
-  // Get the top two sorted weights.
+const SeasonDetermination = (sortedWeights: WeightedSubConcept[]): Season => {
   const top = sortedWeights.slice(0, 2);
-  // Map to the subConcept values and trim any extra whitespace.
   const seasonArray = top.map((item) => item.subConcept.trim());
 
-  // Use switch(true) to check for combinations regardless of order.
   switch (true) {
     case seasonArray.includes(Categories.Ambitious) &&
       seasonArray.includes(Categories.HeartAndHome):
-      return "Heart & Home";
+      return Season.HeartAndHome;
     case seasonArray.includes(Categories.Ambitious) &&
       seasonArray.includes(Categories.SelfLove):
-      return "Trophies and Triumphs";
+      return Season.TrophiesAndTriumphs;
     case seasonArray.includes(Categories.Ambitious) &&
       seasonArray.includes(Categories.SoulfulImpact):
-      return "Inspiring Flames";
+      return Season.InspiringFlames;
     case seasonArray.includes(Categories.HeartAndHome) &&
       seasonArray.includes(Categories.SelfLove):
-      return "A Refilled Heart";
+      return Season.ARefilledHeart;
     case seasonArray.includes(Categories.HeartAndHome) &&
       seasonArray.includes(Categories.SoulfulImpact):
-      return "Ribbons and Paper Boxes";
+      return Season.RibbonsAndPaperBoxes;
     case seasonArray.includes(Categories.SelfLove) &&
       seasonArray.includes(Categories.SoulfulImpact):
-      return "Life’s Canvas";
+      return Season.LifesCanvas;
     default:
-      return seasonArray;
+      return Season.LifesCanvas;
   }
 };
 
-export default Season;
+export default SeasonDetermination;

@@ -20,3 +20,31 @@ export enum Motivation {
   Health = "Health",
   Spiritual = "Spiritual",
 }
+
+export enum Season {
+  InspiringFlames = "Inspiring Flames",
+  LifesCanvas = "Life’s Canvas",
+  HeartAndHome = "Heart & Home",
+  RibbonsAndPaperBoxes = "Ribbons and Paper Boxes",
+  TrophiesAndTriumphs = "Trophies and Triumphs",
+  ARefilledHeart = "A Refilled Heart",
+}
+
+export enum Chapter {
+  Start = "start",
+  Middle = "middle",
+  End = "end",
+}
+
+export enum Obstacle {
+  NotGoodEnough = "NotGoodEnough",
+  NotPrioritize = "NotPrioritize",
+  NotLoveMyself = "NotLoveMyself",
+  FearNotAccepted = "FearNotAccepted",
+  TimeManagement = "TimeManagement",
+  LackConfidence = "LackConfidence",
+  LackInspiration = "LackInspiration",
+  OverDriven = "OverDriven",
+  SocietyPressure = "SocietyPressure",
+  OverwhelmedWorld = "OverwhelmedWorld",
+}

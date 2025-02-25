@@ -40,7 +40,7 @@ const Page3_2_12 = () => {
     if (!hasClicked) {
       setHasClicked(true);
       setTimeout(() => {
-        router.push("3-3");
+        router.push("3-3-1");
       }, 8000);
     }
   };

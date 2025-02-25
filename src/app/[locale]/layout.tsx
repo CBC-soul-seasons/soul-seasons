@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
 import "../globals.css";
-import Sounds from "@/components/ui/sounds";
-import SoundToggle from "@/components/ui/sound-toggle";
 import { PropsWithChildren } from "react";
-import LangToggle from "@/components/ui/lang-toggle";
+import AnimatedLayout from "@/components/AnimatedLayout";
 
 interface LayoutProps extends PropsWithChildren {
   params: Promise<{ locale: string }>;
@@ -22,12 +20,7 @@ const LocaleLayout = async ({ children, params }: LayoutProps) => {
   return (
     <html lang={locale}>
       <body className="relative mx-auto min-h-screen w-full max-w-md overflow-x-hidden overscroll-none">
-        <Sounds />
-        <div className="absolute right-8 top-12 z-50 flex w-full items-center justify-end">
-          <LangToggle />
-          <SoundToggle />
-        </div>
-        <div className={`${fontClass} relative z-10`}>{children}</div>
+        <AnimatedLayout fontClass={fontClass}>{children}</AnimatedLayout>
       </body>
     </html>
   );
