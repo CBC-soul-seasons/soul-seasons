@@ -623,5 +623,34 @@
   },
   "6-3-10": {
     "iHope": "I hope you’ll take time to reflect on your\nfeelings and not lose yourself so often."
+  },
+  "7-1-7": {
+    "earlySeason": "Early Season",
+    "midSeason": "Mid-Season",
+    "bloomSeason": "Full Bloom",
+    "1": {
+      "Inspiring flame": "",
+      "Trophies and Triumphs": "",
+      "Heart & Home": "",
+      "Life Canvas": "",
+      "Refilled Heart": "",
+      "Ribbons and Paper Boxes": ""
+    },
+    "2": {
+      "Inspiring flame": "",
+      "Trophies and Triumphs": "",
+      "Heart & Home": "",
+      "Life Canvas": "",
+      "Refilled Heart": "",
+      "Ribbons and Paper Boxes": ""
+    },
+    "3": {
+      "Inspiring flame": "",
+      "Trophies and Triumphs": "",
+      "Heart & Home": "",
+      "Life Canvas": "",
+      "Refilled Heart": "",
+      "Ribbons and Paper Boxes": ""
+    }
   }
 }
