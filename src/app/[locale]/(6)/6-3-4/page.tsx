@@ -16,17 +16,17 @@ const Scene6_3Page4: React.FC = () => {
   const { seasons, chapter } = useLogicCalculation();
 
   type UserData = {   
-    name: string | null;  // Allow null values
+    name: string;  // Allow null values
     feelings: number;   
     result: string;    
     feedBack: number;
   };
   
   useEffect(() => {
-    const name = localStorage.getItem("name") || "";
-    const feelings = Number(localStorage.getItem("stressScore")) || 5;
-    const result =  `season: ${seasons} | chapter : ${chapter}`;
-    const feedBack = Number(localStorage.getItem("feedbackScore")) ?? "";
+    const name = String(localStorage.getItem("name")) ;
+    const feelings = Number(localStorage.getItem("stressScore")) ;
+    const result =  `season: ${seasons} | chapter : ${chapter}` ;
+    const feedBack = Number(localStorage.getItem("feedbackScore")) ;
   
     setUserData({ name, feelings, result, feedBack });
   }, [feedbackScore]);
