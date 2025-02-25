@@ -17,7 +17,7 @@ const Scene7_1_4 = () => {
            setBlur(false);
        }, 1000);
    }, []);
-   console.log(seasons);
+
    return (
        <section className="relative w-full min-h-screen flex flex-col justify-center items-center">
            {seasons && (

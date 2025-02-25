@@ -19,14 +19,14 @@ const Scene6_3Page4: React.FC = () => {
     name: string;  // Allow null values
     feelings: number;   
     result: string;    
-    feedBack: number;
+    feedBack: string;
   };
   
   useEffect(() => {
     const name = String(localStorage.getItem("name")) ;
     const feelings = Number(localStorage.getItem("stressScore")) ;
     const result =  `season: ${seasons} | chapter : ${chapter}` ;
-    const feedBack = Number(localStorage.getItem("feedbackScore")) ;
+    const feedBack = String(localStorage.getItem("feedbackScore")) ;
   
     setUserData({ name, feelings, result, feedBack });
   }, [feedbackScore]);
@@ -39,7 +39,6 @@ const Scene6_3Page4: React.FC = () => {
     } ;
     try {
       await addUser(userData);
-      console.log("User data saved successfully!");
     } catch (error) {
       console.error("Error saving user data:", error);
     }

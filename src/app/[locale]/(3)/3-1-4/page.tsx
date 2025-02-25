@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useRouter } from '@/i18n/routing';
 import { useEffect } from 'react';
-import exp from 'constants';
 const Scene3_1_4 = ()=>{
     const t = useTranslations("3-1-4")
     const router = useRouter();

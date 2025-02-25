@@ -7,9 +7,6 @@ import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import {getPotImages} from "@/lib/pots-config";
 
-enum PotLabel {
-
-}
 
 const Scene2_2Page2 = () => {
     const t = useTranslations('2-2-2');
