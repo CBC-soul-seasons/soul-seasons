@@ -485,9 +485,14 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
       "/background/3-3-13.webp",
       "/background/3-3-14.webp",
     ],
-    stopMotionDuration: 1000,
+    stopMotionDuration: 1200,
     redirectTo: "4-1-1",
-    imagePreload: [],
+    imagePreload: [
+      "/background/4-1-1.png",
+      "/background/4-1-2.png",
+      "/background/4-1-3.png",
+      "/background/4-1-4.gif",
+    ],
   },
   "4-1-1": {
     image: [
