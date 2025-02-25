@@ -5,8 +5,9 @@ import { Link } from "@/i18n/routing";
 type Props = {
   disabled?: boolean;
   label?: string;
-  url: string;
+  url?: string;
   variant?: "nextPrimary" | "nextSecondary";
+  onClick?: () => void; // Accept onClick function
 };
 
 const NextButton = ({
@@ -14,6 +15,7 @@ const NextButton = ({
   label,
   url,
   variant = "nextPrimary",
+  onClick,
 }: Props) => {
   const t = useTranslations("base");
 
@@ -23,8 +25,14 @@ const NextButton = ({
         <Button disabled variant={variant}>
           {label || t("next")}
         </Button>
+      ) : onClick ? (
+        <Link href={url || "#"}>
+        <Button variant={variant} onClick={onClick}>
+          {label || t("next")}
+        </Button>
+        </Link>
       ) : (
-        <Link href={url}>
+        <Link href={url || "#"}>
           <Button variant={variant}>{label || t("next")}</Button>
         </Link>
       )}

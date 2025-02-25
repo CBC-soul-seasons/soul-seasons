@@ -3,13 +3,47 @@ import Bar from "@/components/ui/bar";
 import NextButton from "@/components/ui/NextButton";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { addUser } from "@/lib/add";
+// import { UserData } from "@/lib/enum";
+import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
 
 const Scene6_3Page4: React.FC = () => {
   const t = useTranslations("6-3-4");
   const [feedbackScore, setFeedbackScore] = useState<number>(5);
   const [mouseDown, setMouseDown] = useState(false);
+  const [userData, setUserData] = useState<UserData | null>(null);
+  const { seasons, chapter } = useLogicCalculation();
 
+  type UserData = {   
+    name: string | null;  // Allow null values
+    feelings: number;   
+    result: string;    
+    feedBack: number;
+  };
+  
+  useEffect(() => {
+    const name = localStorage.getItem("name") || "";
+    const feelings = Number(localStorage.getItem("stressScore")) || 5;
+    const result =  `season: ${seasons} | chapter : ${chapter}`;
+    const feedBack = Number(localStorage.getItem("feedbackScore")) ?? "";
+  
+    setUserData({ name, feelings, result, feedBack });
+  }, [feedbackScore]);
+  
+  
+
+  const handleClick = async () => {
+    if (!userData){
+      return;
+    } ;
+    try {
+      await addUser(userData);
+      console.log("User data saved successfully!");
+    } catch (error) {
+      console.error("Error saving user data:", error);
+    }
+  };
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
       <motion.div
@@ -48,7 +82,7 @@ const Scene6_3Page4: React.FC = () => {
         exit={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <NextButton url="6-3-5" disabled={!mouseDown} />
+        <NextButton url="6-3-5" disabled={!mouseDown} onClick={handleClick} />
       </motion.div>
     </div>
   );

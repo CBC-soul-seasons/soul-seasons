@@ -23,7 +23,11 @@ const Scene01: React.FC = () => {
           }}
           className="flex flex-col items-center text-center text-base text-woh-black"
         >
-          <img src={SoulSeasons.src} alt="Soul Seasons Logo" />
+<img 
+  src={SoulSeasons.src} 
+  alt="Soul Seasons Logo" 
+  className="w-[300px] h-[300px] transform -rotate-[10deg]" 
+/>
         </motion.div>
 
         <motion.div

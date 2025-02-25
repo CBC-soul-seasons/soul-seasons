@@ -16,7 +16,7 @@ const Scene7_1_1 = () => {
     <section className="w-full h-lvh flex flex-col items-center justify-center"
     onClick={handleClick}>
       <div className="relative w-full h-full flex flex-col items-center justify-center gap-12">
-      <h1 className="relative left-[30px] top-[70px] text-center font-['TAN - MON CHERI'] font-normal italic text-[64px] leading-[90.25px] tracking-normal">
+      <h1 className="relative left-[30px] top-[50px] text-center font-tan-mon-cheri font-normal italic text-[64px] leading-[90.25px] tracking-normal">
             Goal
           </h1>
           <div className="mt-10">

@@ -62,20 +62,44 @@ export const useLogicCalculation = () => {
     const storedMotivation = localStorage.getItem("motivationGoal");
     const storedObstacles = localStorage.getItem("currentObstacles");
     const speedClicked = localStorage.getItem("speed");
-
+  
     if (storedMotivation) {
       try {
-        setMotivation(
-          JSON.parse(storedMotivation).map((item: any, index: number) => ({
-            ...item,
-            index,
-          }))
-        );
+        const parsedMotivation = JSON.parse(storedMotivation);
+        
+        // Extract the "name" property and map it to the Motivation enum
+        const motivationList: Motivation[] = parsedMotivation
+          .map((item: { name: string }) => {
+            switch (item.name) {
+              case "Career/Work":
+                return Motivation.CareerWork;
+              case "Family":
+                return Motivation.Family;
+              case "Relationship/Friends":
+                return Motivation.RelationshipFriends;
+              case "Sharing/Contributions":
+                return Motivation.SharingContributions;
+              case "Self-Development":
+                return Motivation.SelfDevelopment;
+              case "Finance/Money":
+                return Motivation.FinanceMoney;
+              case "Health":
+                return Motivation.Health;
+              case "Spiritual":
+                return Motivation.Spiritual;
+              default:
+                return null; // Handle unknown cases
+            }
+          })
+          .filter((mot: Motivation | null) => mot !== null) as Motivation[]; // Remove null values
+  
+        console.log("🚀 Processed Motivation:", motivationList);
+        setMotivation(motivationList);
       } catch (error) {
         console.error("Error parsing motivation:", error);
       }
     }
-
+  
     if (storedObstacles) {
       try {
         setObstacles(JSON.parse(storedObstacles));
@@ -83,7 +107,7 @@ export const useLogicCalculation = () => {
         console.error("Error parsing obstacles:", error);
       }
     }
-
+  
     if (speedClicked) {
       try {
         setSpeed(JSON.parse(speedClicked));
@@ -91,6 +115,7 @@ export const useLogicCalculation = () => {
         console.error("Error parsing speed:", error);
       }
     }
+  
     setDataLoaded(true);
   }, []);
 
@@ -129,11 +154,14 @@ export const useLogicCalculation = () => {
     const sortedWeight = [...weightedMotivations, ...weightedObstacles].sort(
       (a, b) => b.weight - a.weight
     );
+    console.log(weightedMotivations);
+    console.log(sortedWeight);
+    console.log(selectedMotivationSubConcept);
     setSortedSubConcepts(sortedWeight);
     setSeasons(SeasonDetermination(sortedWeight));
     setChapter(ChapterDetermination(sortedWeight));
   }, [motivation, obstacles, speed]);
-
+  
   return {
     sortedSubConcepts,
     subConceptMotivation,
