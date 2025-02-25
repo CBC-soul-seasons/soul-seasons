@@ -69,30 +69,10 @@ export const useLogicCalculation = () => {
         
         // Extract the "name" property and map it to the Motivation enum
         const motivationList: Motivation[] = parsedMotivation
-          .map((item: { name: string }) => {
-            switch (item.name) {
-              case "Career/Work":
-                return Motivation.CareerWork;
-              case "Family":
-                return Motivation.Family;
-              case "Relationship/Friends":
-                return Motivation.RelationshipFriends;
-              case "Sharing/Contributions":
-                return Motivation.SharingContributions;
-              case "Self-Development":
-                return Motivation.SelfDevelopment;
-              case "Finance/Money":
-                return Motivation.FinanceMoney;
-              case "Health":
-                return Motivation.Health;
-              case "Spiritual":
-                return Motivation.Spiritual;
-              default:
-                return null; // Handle unknown cases
-            }
-          })
-          .filter((mot: Motivation | null) => mot !== null) as Motivation[]; // Remove null values
-  
+          .map((item: { name: string }) => (
+           item.name
+          ))
+        
         console.log("🚀 Processed Motivation:", motivationList);
         setMotivation(motivationList);
       } catch (error) {
