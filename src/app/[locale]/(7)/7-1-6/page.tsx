@@ -1,7 +1,5 @@
 "use client";
 import Bar from "@/components/ui/bar";
-import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
-import NextDisplay from "@/components/ui/nextDisplay";
 import { useRouter } from "@/i18n/routing";
 import { getLocalStorageWithFallback } from "@/lib/localstorageUtils";
 import { motion } from "framer-motion";

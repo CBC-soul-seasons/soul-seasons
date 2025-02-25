@@ -6,8 +6,6 @@ export const cn = (...inputs: ClassValue[]) => {
 };
 
 export const getDynamicFontSize = (locale: string, length: number) => {
-  console.log(length);
-
   if (locale === "th") {
     if (length > 400) {
       return "0.9rem";
