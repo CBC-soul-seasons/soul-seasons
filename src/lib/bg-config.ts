@@ -556,6 +556,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
       "/background/4-1-21.png",
     ],
   },
+  // TODO : Fix weird colors
   "4-1-16": {
     image: [
       "/background/4-1-4.gif",
