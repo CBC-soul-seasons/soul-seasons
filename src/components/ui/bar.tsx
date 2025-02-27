@@ -5,8 +5,9 @@ import Marker from "./marker";
 interface BarProps {
   stressScore: number;
   localStorageKey?: string;
-  setStressScore: (score: number) => void;
-  setMouseDown: (mouseDown: boolean) => void;
+  setStressScore?: (score: number) => void;
+  setMouseDown?: (mouseDown: boolean) => void;
+  showLabel?: boolean;
 }
 
 const Bar: React.FC<BarProps> = ({
@@ -14,10 +15,15 @@ const Bar: React.FC<BarProps> = ({
   localStorageKey = "stressScore",
   setStressScore,
   setMouseDown,
+  showLabel = true,
 }) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setStressScore(Number(e.target.value));
-    setMouseDown(true);
+    if (setStressScore) {
+      setStressScore(Number(e.target.value));
+    }
+    if (setMouseDown) {
+      setMouseDown(true);
+    }
   };
 
   useEffect(() => {
@@ -28,14 +34,16 @@ const Bar: React.FC<BarProps> = ({
     <div className="flex flex-col gap-1">
       <div className="flex flex-col items-center justify-center relative ">
         {/* Bubble */}
-        <div
-          className="absolute -top-12 rounded-full"
-          style={{
-            left: `calc(${stressScore * 10}% - 20px)`, // Adjust position dynamically
-          }}
-        >
-          <Marker stressScore={stressScore} />
-        </div>
+        {showLabel && (
+          <div
+            className="absolute -top-12 rounded-full"
+            style={{
+              left: `calc(${stressScore * 10}% - 20px)`, // Adjust position dynamically
+            }}
+          >
+            <Marker stressScore={stressScore} />
+          </div>
+        )}
         <input
           type="range"
           min="1"
@@ -51,10 +59,12 @@ const Bar: React.FC<BarProps> = ({
           onChange={handleInputChange}
         />
       </div>
-      <div className="flex justify-between text-lg font-light text-white">
-        <span>1</span>
-        <span>10</span>
-      </div>
+      {showLabel && (
+        <div className="flex justify-between text-lg font-light text-white">
+          <span>1</span>
+          <span>10</span>
+        </div>
+      )}
     </div>
   );
 };
