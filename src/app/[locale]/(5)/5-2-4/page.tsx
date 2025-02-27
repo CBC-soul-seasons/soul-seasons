@@ -75,7 +75,7 @@ const Scene5_2Page4: React.FC = () => {
         transition={{ delay: 0, duration: 1 }}
       >
         <div className="animate-pulse">
-          <div className="bg-gradient-to-b from-[#D9D9D9] to-[#737373] w-[67px] h-[67px] rounded-full opacity-50 bg-blend-luminosity shadow-touch" />
+          <div className="bg-gradient-to-b from-[#D9D9D9] to-[#737373] w-[67px] h-[67px] rounded-full opacity-50 bg-blend-luminosity shadow-touch cursor-pointer" />
         </div>
       </motion.div>
     </div>
