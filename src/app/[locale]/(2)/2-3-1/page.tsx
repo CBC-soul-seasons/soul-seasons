@@ -22,7 +22,7 @@ const Scene2_3Page1: React.FC = () => {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center relative">
       <motion.div
-        className="text-center text-base text-white absolute top-1/4"
+        className="text-center text-base text-white absolute top-1/4 max-w-[80%]"
         initial={{ opacity: 0, z: -20 }}
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >

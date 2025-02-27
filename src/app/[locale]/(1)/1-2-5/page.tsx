@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 const Page1_2_5 = () => {
   const t = useTranslations("1-2-5");
 
+  const name = getLocalStorageWithFallback("name", t("name"));
   const importantPerson = getLocalStorageWithFallback(
     "importantPerson",
     t("importantPerson")
@@ -16,12 +17,12 @@ const Page1_2_5 = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
       <motion.div
-        className="text-center text-base text-white absolute top-[65%]"
+        className="text-center text-base text-white absolute top-2/3"
         initial={{ opacity: 0, z: -20 }}
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
         <p>
-          {importantPerson} : {t("whereAreYou")}
+          {importantPerson} : "{name}... {t("whereAreYou")}"
         </p>
       </motion.div>
 

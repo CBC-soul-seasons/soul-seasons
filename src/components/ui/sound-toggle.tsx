@@ -4,9 +4,7 @@ import { useSoundStore } from "@/store/sound";
 import { Volume2, VolumeX } from "lucide-react";
 import { Button } from "./button";
 
-type Props = {};
-
-const SoundToggle = (props: Props) => {
+const SoundToggle = () => {
   const { toggle, isPlaying } = useSoundStore();
   return (
     <Button
