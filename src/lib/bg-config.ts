@@ -189,6 +189,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     image: "/background/1-2.webp",
     imagePreload: ["/background/1-3-1.png"],
   },
+  // TODO : Fix weird color for 1-3
   "1-3-1": {
     image: "/background/1-3-1.png",
     imagePreload: [
@@ -485,9 +486,14 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
       "/background/3-3-13.webp",
       "/background/3-3-14.webp",
     ],
-    stopMotionDuration: 1000,
+    stopMotionDuration: 1200,
     redirectTo: "4-1-1",
-    imagePreload: [],
+    imagePreload: [
+      "/background/4-1-1.png",
+      "/background/4-1-2.png",
+      "/background/4-1-3.png",
+      "/background/4-1-4.gif",
+    ],
   },
   "4-1-1": {
     image: [
@@ -555,6 +561,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
       "/background/4-1-21.png",
     ],
   },
+  // TODO : Fix weird colors
   "4-1-16": {
     image: [
       "/background/4-1-4.gif",
@@ -726,6 +733,22 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "6-3-11": {
     image: "/img/6-3-1.webp",
+    imagePreload: [],
+  },
+  "7-1-6": {
+    image: "/background/7-2-open.png",
+    imagePreload: [],
+  },
+  "7-1-7-1": {
+    image: "/background/7-2.webp",
+    imagePreload: [],
+  },
+  "7-1-7-2": {
+    image: "/background/7-2.webp",
+    imagePreload: [],
+  },
+  "7-1-7-3": {
+    image: "/background/7-2.webp",
     imagePreload: [],
   },
   "7-2": {

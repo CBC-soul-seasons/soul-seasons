@@ -1,5 +1,4 @@
 "use client";
-import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
 import { Link } from "@/i18n/routing";
 import { getLocalStorageWithFallback } from "@/lib/localstorageUtils";
 import { motion } from "framer-motion";
@@ -38,7 +37,6 @@ const Scene1_4Page2: React.FC = () => {
           <div className="w-full h-full rounded-full opacity-50 bg-gradient-to-b from-[#D9D9D9] to-[#737373] bg-blend-luminosity shadow-touch" />
         </Link>
       </motion.div>
-      <DelayedFullScreenLink href="1-4-4" delay={2000} />
     </div>
   );
 };

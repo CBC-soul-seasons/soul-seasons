@@ -40,7 +40,7 @@ const Scene2_2Page4: React.FC = () => {
             }
             if (i === colors.length - 1 && j === 3) {
               setTimeout(() => {
-                router.push("2-3-2");
+                router.push("2-3-1");
               }, stopMotionDuration / 2);
             }
           },
