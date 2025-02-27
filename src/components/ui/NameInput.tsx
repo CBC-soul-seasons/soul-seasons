@@ -20,7 +20,8 @@ const NameInput: React.FC<Props> = ({ placeholder, name, setName }) => {
     <input
       value={name}
       onChange={handleChange}
-      className="font-kanit text-[18px] font-bold w-[205px] h-[41px] rounded-[12px] px-5 opacity-70 placeholder:font-light"
+      maxLength={25} // User cannot type more than 25 characters
+      className="font-kanit text-[18px] font-bold w-[205px] h-[41px] rounded-[12px] px-5 leading-[41px] opacity-70 placeholder:font-light"
       type="text"
       placeholder={placeholder}
     />
