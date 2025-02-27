@@ -152,6 +152,24 @@ export const soundPageMap: Record<
       volume: 0.1,
     },
   },
+  "7-1-2": {
+    soundEffect: {
+      sound: "/sound/effect/E9 - Autumn book flip.wav",
+      volume: 1,
+    },
+  },
+  "7-1-4": {
+    soundEffect: {
+      sound: "/sound/effect/E9 - Autumn book flip.wav",
+      volume: 1,
+    },
+  },
+  "7-1-6": {
+    soundEffect: {
+      sound: "/sound/effect/E9 - Autumn book flip.wav",
+      volume: 1,
+    },
+  },
 } as const;
 
 export const ambientPageMap: Record<string, AmbientTrack> = {
