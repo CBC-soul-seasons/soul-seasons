@@ -8,9 +8,8 @@ const Scene032 = () => {
   const t = useTranslations("0-3-2");
 
   const locale = useLocale();
-  const imageSrc =
-    locale === "th" ? "/icons/hidetabTh.png" : "icons/hidetabEn.png";
-
+  const imageSrc = locale === "th" ? "/icons/hidetabTh.png" : "/icons/hidetabEn.png";
+  
   return (
     <section className="w-full justify-center h-lvh flex flex-col">
       <motion.div

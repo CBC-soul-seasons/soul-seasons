@@ -733,6 +733,20 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     image: "/img/6-3-1.webp",
     imagePreload: [],
   },
+  "7-1-1": {
+    image: "/background/7-1-1.png",
+    imagePreload: ["/background/7-1-2.png"],
+  },
+  "7-1-2": {
+    image: ["/background/7-1-2.png", "/background/7-1-3.png"],
+    stopMotionDuration: 1000,
+    imagePreload: ["/background/7-1-2.png"],
+  },
+  "7-1-4": {
+    image: ["/background/7-1-2.png", "/background/7-1-3.png"],
+    stopMotionDuration: 1000,
+    imagePreload: [],
+  },
   "7-1-6": {
     image: "/background/7-2-open.png",
     imagePreload: [],
@@ -764,5 +778,5 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   "7-3-3": {
     image: "/background/7-3-1.webp",
     imagePreload: [],
-  }
+  },
 } as const;
