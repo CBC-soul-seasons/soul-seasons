@@ -11,7 +11,7 @@ const Page7_3_1 = () => {
         width={350}
         height={100}
         objectFit="contain"
-        className="relative z-0 left-[15%] top-[40%]"
+        className="relative z-0 left-[5%] top-[40%]"
       />
 
       <DelayedFullScreenLink href="7-3-2" delay={2000} />

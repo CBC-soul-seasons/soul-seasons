@@ -691,13 +691,14 @@
   },
   "7-3-2": {
     "p1": {
-      "s1": "ประสบการณ์ที่คุณสัมผัสบนหน้าจอ…",
-      "s2": "เป็นเพียงจุดเริ่มต้นของการเดินทางทั้งหมด!✨",
-      "s3": "อย่าปล่อยให้ประสบการณ์ของคุณจบลงเพียง",
-      "s4": "แค่บนหน้าจอมือถือ",
-      "s5": "มาสัมผัส Soul Seasons ด้วยตัวคุณเอง",
-      "s6": "ผ่านการดื่มด่ำกับทุกองค์ประกอบที่ถูกรังสรรค์ขึ้นมา",
-      "s7": "อย่างงดงาม และค้นพบสิ่งที่ไม่มีวันถ่ายทอดผ่านหน้าจอได้"
+      "s1": "The experience you see on your screen… is just",
+      "s2": "the beginning of the journey! ✨",
+      "s3": "Don’t let your experience end",
+      "s4": "on a mobile screen.",
+      "s5": "Immerse yourself in Soul Seasons",
+      "s6": "and feel every beautifully crafted element",
+      "s7": "come to life. Discover what can never truly",
+      "s8": "be conveyed through a screen."
     }
   }
 }

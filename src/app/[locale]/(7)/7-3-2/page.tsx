@@ -31,7 +31,7 @@ const Page7_3_1 = () => {
       </motion.div>
 
       <motion.div
-        className="text-center text-black absolute top-[35%] right-[22%]"
+        className="text-center text-black absolute top-[35%] right-[23%]"
         style={{
           fontSize: "14px",
         }}
