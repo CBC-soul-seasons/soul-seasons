@@ -187,30 +187,30 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "1-2-6": {
     image: "/background/1-2.webp",
-    imagePreload: ["/background/1-3-1.png"],
+    imagePreload: ["/background/1-3-1.webp"],
   },
   "1-3-1": {
-    image: "/background/1-3-1.png",
+    image: "/background/1-3-1.webp",
     imagePreload: [
-      "/background/1-3-2.png",
-      "/background/1-3-3.png",
-      "/background/1-3-4.png",
-      "/background/1-3-5.png",
+      "/background/1-3-2.webp",
+      "/background/1-3-3.webp",
+      "/background/1-3-4.webp",
+      "/background/1-3-5.webp",
     ],
   },
   "1-3-2": {
     image: [
-      "/background/1-3-2.png",
-      "/background/1-3-3.png",
-      "/background/1-3-4.png",
-      "/background/1-3-5.png",
+      "/background/1-3-2.webp",
+      "/background/1-3-3.webp",
+      "/background/1-3-4.webp",
+      "/background/1-3-5.webp",
     ],
     stopMotionDuration: 1000,
     redirectTo: "1-3-6",
-    imagePreload: ["/background/1-3-6.png"],
+    imagePreload: ["/background/1-3-6.webp"],
   },
   "1-3-6": {
-    image: "/background/1-3-6.png",
+    image: "/background/1-3-6.webp",
     imagePreload: ["/background/1-4-1.webp"],
   },
   "1-4-1": {
@@ -485,15 +485,20 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
       "/background/3-3-13.webp",
       "/background/3-3-14.webp",
     ],
-    stopMotionDuration: 1000,
+    stopMotionDuration: 1200,
     redirectTo: "4-1-1",
-    imagePreload: [],
+    imagePreload: [
+      "/background/4-1-1.webp",
+      "/background/4-1-2.webp",
+      "/background/4-1-3.webp",
+      "/background/4-1-4.gif",
+    ],
   },
   "4-1-1": {
     image: [
-      "/background/4-1-1.png",
-      "/background/4-1-2.png",
-      "/background/4-1-3.png",
+      "/background/4-1-1.webp",
+      "/background/4-1-2.webp",
+      "/background/4-1-3.webp",
       "/background/4-1-4.gif",
     ],
     stopMotionDuration: 1000,
@@ -548,21 +553,21 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   "4-1-15": {
     image: "/background/4-1-4.gif",
     imagePreload: [
-      "/background/4-1-17.png",
-      "/background/4-1-18.png",
-      "/background/4-1-19.png",
-      "/background/4-1-20.png",
-      "/background/4-1-21.png",
+      "/background/4-1-17.webp",
+      "/background/4-1-18.webp",
+      "/background/4-1-19.webp",
+      "/background/4-1-20.webp",
+      "/background/4-1-21.webp",
     ],
   },
   "4-1-16": {
     image: [
       "/background/4-1-4.gif",
-      "/background/4-1-17.png",
-      "/background/4-1-18.png",
-      "/background/4-1-19.png",
-      "/background/4-1-20.png",
-      "/background/4-1-21.png",
+      "/background/4-1-17.webp",
+      "/background/4-1-18.webp",
+      "/background/4-1-19.webp",
+      "/background/4-1-20.webp",
+      "/background/4-1-21.webp",
     ],
     stopMotionDuration: 1000,
     redirectTo: "5-1-1",
@@ -726,6 +731,22 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "6-3-11": {
     image: "/img/6-3-1.webp",
+    imagePreload: [],
+  },
+  "7-1-6": {
+    image: "/background/7-2-open.png",
+    imagePreload: [],
+  },
+  "7-1-7-1": {
+    image: "/background/7-2.webp",
+    imagePreload: [],
+  },
+  "7-1-7-2": {
+    image: "/background/7-2.webp",
+    imagePreload: [],
+  },
+  "7-1-7-3": {
+    image: "/background/7-2.webp",
     imagePreload: [],
   },
   "7-2": {
