@@ -69,6 +69,7 @@ export default {
       fontFamily: {
         th: ["cloud", "sans-serif"],
         en: ['"Source Serif 4"', "serif"],
+        tan_mon: ["tan-mon-cheri", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

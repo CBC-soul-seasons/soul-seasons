@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 
 const Scene7_1_4 = () => {
    const { seasons } = useLogicCalculation();
-//   const seasons = "Life Canvas";
    const t = useTranslations(`7-1-4`);
    const locale = useLocale();
    const [blur, setBlur] = useState(true);
@@ -45,7 +44,7 @@ const Scene7_1_4 = () => {
                        </div>
                    </div>
 
-                   <div className="w-full gap-[10px] h-auto flex justify-center items-center font-light text-primaryblue">
+                   <div className="w-full gap-[5px] pl-8 h-auto flex justify-center items-center font-light text-primaryblue">
                        <div className="text-[14px] h-auto font-light text-primaryblue">
                            <p className={`text-center ${blur ? "filter blur-sm dissolve" : ""}`}>
                                {t(`p2.${seasons}.s1`)}
@@ -65,7 +64,7 @@ const Scene7_1_4 = () => {
                           className={`
                             ${seasonImg[seasons as keyof typeof seasonImg]?.["w"][1]} 
                             ${seasonImg[seasons as keyof typeof seasonImg]?.["h"][1]} 
-                            ${[Season.TrophiesAndTriumphs, Season.LifesCanvas, Season.ARefilledHeart, Season.RibbonsAndPaperBoxes].includes(seasons)
+                            ${[Season.TrophiesAndTriumphs, Season.ARefilledHeart, Season.RibbonsAndPaperBoxes].includes(seasons)
                               ? "" // No additional class needed
                               : "relative w-[75px] h-auto bottom-6"}
                             ${blur ? "filter blur-sm dissolve" : ""}

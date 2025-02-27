@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 import { addUser } from "@/lib/add";
-// import { UserData } from "@/lib/enum";
+import { UserData } from "@/lib/enum";
 import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
 
 const Scene6_3Page4: React.FC = () => {
@@ -15,17 +15,12 @@ const Scene6_3Page4: React.FC = () => {
   const [userData, setUserData] = useState<UserData | null>(null);
   const { seasons, chapter } = useLogicCalculation();
 
-  type UserData = {   
-    name: string;  // Allow null values
-    feelings: number;   
-    result: string;    
-    feedBack: string;
-  };
+ 
   
   useEffect(() => {
     const name = String(localStorage.getItem("name")) ;
     const feelings = Number(localStorage.getItem("stressScore")) ;
-    const result =  `season: ${seasons} | chapter : ${chapter}` ;
+    const result =  {"season": seasons, "chapter": chapter} ;
     const feedBack = String(localStorage.getItem("feedbackScore")) ;
   
     setUserData({ name, feelings, result, feedBack });
@@ -38,7 +33,13 @@ const Scene6_3Page4: React.FC = () => {
       return;
     } ;
     try {
-      await addUser(userData);
+      if (seasons && chapter) {
+        await addUser(userData);
+      }
+      else {
+        console.error("Error saving user data: seasons and chapter are required");
+      }
+      
     } catch (error) {
       console.error("Error saving user data:", error);
     }

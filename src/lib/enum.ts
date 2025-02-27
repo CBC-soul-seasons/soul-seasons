@@ -67,9 +67,15 @@ export const seasonImg = {
   "Ribbons and Paper Boxes":{ "img":['/icons/seasons/gift.png','/icons/seasons/foam.png'], "w": ["w-[81.49px]","w-[85.97px]"],"h": ["h-[76px]", "h-[72px]"] }
 };
 
+
+export type Result ={
+  season: string;
+  chapter: string;
+}
+
 export type UserData = {   
-  name: string | null;  // Allow null values
-  feelings: number;   
-  result: string;    
-  feedBack: string;
-};
+     name: string;         // User Name
+     feelings: number;       // Pre/Post Feelings (1-10)
+     result: Result;        // Result ที่ได้
+     feedBack: string       // Feedback Website
+}
