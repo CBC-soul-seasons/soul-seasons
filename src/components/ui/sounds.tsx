@@ -41,18 +41,26 @@ const Sounds = () => {
   const [ambientTrack, setAmbientTrack] = useState<AmbientTrack>();
 
   const fadeDuration = 250;
+  const backingTrackFadeDuration = 4500;
 
   useEffect(() => {
     let nextSound = scenePageMap[scene];
     if (page in scenePageMap) {
       nextSound = scenePageMap[page as keyof typeof scenePageMap];
     }
-
-    if (nextSound !== backingTrackSound) {
-      backingTrackRef.current?.howler.fade(backingTrackVolume, 0, fadeDuration);
+    if (nextSound && !backingTrackSound) {
       setTimeout(() => {
         setBackingTrackSound(nextSound);
       }, fadeDuration);
+    } else if (nextSound !== backingTrackSound) {
+      backingTrackRef.current?.howler.fade(
+        backingTrackVolume,
+        0,
+        backingTrackFadeDuration
+      );
+      setTimeout(() => {
+        setBackingTrackSound(nextSound);
+      }, backingTrackFadeDuration);
     }
   }, [page]);
 

@@ -10,11 +10,12 @@ export const scenePageMap = {
   "0-7": "/sound/bgm/B2 - deep forest relaxation.wav",
   "0-8": "/sound/bgm/B2 - deep forest relaxation.wav",
   "1-1": "/sound/bgm/B3 - Nostalgia.wav",
-  "1-1-1": "",
-  "1-1-2": "",
+  "1-1-1": undefined,
+  "1-1-2": undefined,
   "1-2": "/sound/bgm/B3 - Nostalgia.wav",
   "1-3": "/sound/bgm/B3 - Nostalgia.wav",
   "1-4": "/sound/bgm/B3 - Nostalgia.wav",
+  "1-4-9": "/sound/bgm/B4 - Rain V3.wav",
   "2-1": "/sound/bgm/B4 - Rain V3.wav",
   "2-2": "/sound/bgm/B4 - Rain V3.wav",
   "2-3": "/sound/bgm/B4 - Rain V3.wav",
@@ -22,6 +23,7 @@ export const scenePageMap = {
   "3-1": "/sound/bgm/B5 - Winter.wav",
   "3-2": "/sound/bgm/B5 - Winter.wav",
   "3-3": "/sound/bgm/B5 - Winter.wav",
+  "3-3-7": "/sound/bgm/B6 - Spring V3.wav",
   "4-1": "/sound/bgm/B6 - Spring V3.wav",
   "5-1": "/sound/bgm/B7 - Summer2.wav",
   "5-2": "/sound/bgm/B7 - Summer2.wav",
@@ -95,6 +97,7 @@ export const soundPageMap: Record<
       sound: "/sound/effect/E8 - Autumn เสียงเดิน.wav",
       volume: 1,
     },
+    backgroundVolume: 0.1,
   },
   "1-3-2": {
     soundEffect: {
@@ -102,6 +105,7 @@ export const soundPageMap: Record<
       volume: 1,
       replay: true,
     },
+    backgroundVolume: 0.1,
   },
   "1-4-5": {
     soundEffect: {

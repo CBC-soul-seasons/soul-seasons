@@ -26,7 +26,7 @@ const Scene1_4Page4: React.FC = () => {
         </div>
       </motion.div>
       <motion.div
-        className="absolute bottom-[48%] right-[41.5%] flex items-center justify-center text-4xl font-medium"
+        className="absolute bottom-[48%] right-[41.5%] flex items-center justify-center text-4xl font-medium font-serif"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}
