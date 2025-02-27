@@ -4,13 +4,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-const Page7_3_1 = () => {
+const Page7_3_2 = () => {
   const t = useTranslations("7-3-2");
 
   return (
     <div className="flex h-screen flex-col text-white items-center justify-center relative">
       <Image
-        src="/background/7-3-2.png"
+        src="/background/7-3-2.webp"
         alt="ticket"
         width={350}
         height={100}
@@ -70,4 +70,4 @@ const Page7_3_1 = () => {
   );
 };
 
-export default Page7_3_1;
+export default Page7_3_2;
