@@ -9,7 +9,7 @@ const Page1_2_6 = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
       <motion.div
-        className="text-center text-base text-white absolute top-[65%]"
+        className="text-center text-base text-white absolute top-2/3 max-w-[85%]"
         initial={{ opacity: 0, z: -20 }}
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >

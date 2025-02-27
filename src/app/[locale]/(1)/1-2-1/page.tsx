@@ -22,7 +22,7 @@ const Page1_2_1 = () => {
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
         <p>
-          {importantPerson} : "{name} {name} {name}"
+          {importantPerson} : "{name}... {name}... {name}..."
         </p>
       </motion.div>
 
