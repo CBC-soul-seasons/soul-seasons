@@ -86,7 +86,7 @@ const Page7_3_2 = () => {
         <p>{t("p1.s7")}</p>
       </motion.div>
 
-      <DelayedFullScreenLink href="7-3-2" delay={2000} />
+      <DelayedFullScreenLink href="7-3-3" delay={2000} />
     </div>
   );
 };

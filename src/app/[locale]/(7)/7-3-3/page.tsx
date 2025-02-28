@@ -55,7 +55,11 @@ const Page7_3_3 = () => {
         <p>{t("p2.s2")}</p>
         <p>{t("p2.s3")}</p>
       </motion.div>
-      <div className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar overflow-x-hidden top-[5%]">
+      <motion.div
+        className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar overflow-x-hidden top-[5%]"
+        initial={{ opacity: 0, z: -20 }}
+        animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
+      >
         <div className="flex justify-center mt-10 mb-4">
           <Image
             src="/7-3-3/image 102.webp"
@@ -675,7 +679,7 @@ const Page7_3_3 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <motion.div
         className="absolute bottom-3 transform -translate-x-1/2 flex flex-col space-y-2 items-center"
