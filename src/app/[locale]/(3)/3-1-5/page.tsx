@@ -2,8 +2,8 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Check from "../../../../../public/icons/ei_check.png";
-import Selected from "../../../../../public/icons/selected.png";
+import Check from "../../../../../public/icons/ei_check.webp";
+import Selected from "../../../../../public/icons/selected.webp";
 import NextButton from "@/components/ui/NextButton";
 import { Obstacle } from "@/lib/enum";
 
