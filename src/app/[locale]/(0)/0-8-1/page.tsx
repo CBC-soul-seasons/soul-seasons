@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import SlideUnlock from "@/components/ui/slide-to-unlock";
+// import SlideUnlock from "@/components/ui/slide-to-unlock";
 import { motion } from "framer-motion";
 import NextDisplay from "@/components/ui/nextDisplay";
 import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
