@@ -767,10 +767,6 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     image: "/background/7-2.webp",
     imagePreload: [],
   },
-  "7-3-1": {
-    image: "/background/7-3-1.webp",
-    imagePreload: [],
-  },
   "7-3-2": {
     image: "/background/7-3-1.webp",
     imagePreload: [],

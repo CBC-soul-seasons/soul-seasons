@@ -9,14 +9,23 @@ const Page7_3_2 = () => {
 
   return (
     <div className="flex h-screen flex-col text-white items-center justify-center relative">
-      <Image
-        src="/background/7-3-2.webp"
-        alt="ticket"
-        width={350}
-        height={100}
-        objectFit="contain"
-        className="relative z-0 left-[4%] top-[5%]"
-      />
+      <motion.div
+        initial={{ opacity: 0, filter: "blur(10px)" }}
+        animate={{
+          opacity: 1,
+          filter: "blur(0px)",
+          transition: { duration: 3, delay: 1 },
+        }}
+      >
+        <Image
+          src="/background/7-3-2.webp"
+          alt="ticket"
+          width={350}
+          height={100}
+          objectFit="contain"
+          className="relative z-0 left-[4%] top-[13%]"
+        />
+      </motion.div>
 
       <motion.div
         className="text-center text-white absolute top-[15%] "
@@ -24,7 +33,11 @@ const Page7_3_2 = () => {
           fontSize: "18px",
         }}
         initial={{ opacity: 0, z: -20 }}
-        animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
+        animate={{
+          opacity: 1,
+          z: 0,
+          transition: { duration: 1.5, delay: 1.5 },
+        }}
       >
         <p>{t("p1.s1")}</p>
         <p>{t("p1.s2")}</p>
@@ -36,7 +49,11 @@ const Page7_3_2 = () => {
           fontSize: "14px",
         }}
         initial={{ opacity: 0, z: -20 }}
-        animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
+        animate={{
+          opacity: 1,
+          z: 0,
+          transition: { duration: 1.5, delay: 1.75 },
+        }}
       >
         <p>{t("p1.s3")}</p>
         <p>{t("p1.s4")}</p>
@@ -48,7 +65,7 @@ const Page7_3_2 = () => {
           fontSize: "16px",
         }}
         initial={{ opacity: 0, z: -20 }}
-        animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
+        animate={{ opacity: 1, z: 0, transition: { duration: 1.5, delay: 2 } }}
       >
         <p>{t("p1.s5")}</p>
       </motion.div>
@@ -59,13 +76,17 @@ const Page7_3_2 = () => {
           fontSize: "14px",
         }}
         initial={{ opacity: 0, z: -20 }}
-        animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
+        animate={{
+          opacity: 1,
+          z: 0,
+          transition: { duration: 1.5, delay: 2.25 },
+        }}
       >
         <p>{t("p1.s6")}</p>
         <p>{t("p1.s7")}</p>
       </motion.div>
 
-      <DelayedFullScreenLink href="7-3-3" delay={2000} />
+      <DelayedFullScreenLink href="7-3-2" delay={2000} />
     </div>
   );
 };

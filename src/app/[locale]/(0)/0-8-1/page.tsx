@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-// import SlideUnlock from "@/components/ui/slide-to-unlock";
 import { motion } from "framer-motion";
 import NextDisplay from "@/components/ui/nextDisplay";
 import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
@@ -18,10 +17,7 @@ const Page0_8_1 = () => {
         objectFit="cover"
         className="absolute z-0"
       />
-      {/* <SlideUnlock
-        nextPage="/0-8-2"
-        className="absolute top-[85%] left-1/2 transform -translate-x-1/2"
-      /> */}
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
