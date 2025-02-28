@@ -3,6 +3,7 @@ import Image from "next/image";
 import SlideUnlock from "@/components/ui/slide-to-unlock";
 import { motion } from "framer-motion";
 import NextDisplay from "@/components/ui/nextDisplay";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
 
 const Page0_8_1 = () => {
   return (
@@ -34,6 +35,8 @@ const Page0_8_1 = () => {
       >
         <NextDisplay />
       </motion.div>
+
+      <DelayedFullScreenLink href="0-8-2" delay={2000} />
     </div>
   );
 };
