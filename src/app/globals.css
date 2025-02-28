@@ -123,4 +123,16 @@ body {
   background: url("/icons/sliderthumb.png") no-repeat center;
   background-size: contain;
   cursor: pointer;
+
+.custom-scrollbar {
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For IE and Edge */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
 }

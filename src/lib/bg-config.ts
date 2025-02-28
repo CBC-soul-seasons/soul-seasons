@@ -43,35 +43,35 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     imagePreload: [],
   },
   "0-7-1": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-2": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-3": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-4": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-5": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-6": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-7": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-8": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-8-1": {
@@ -574,55 +574,55 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     imagePreload: ["/background/5-1-1.png"],
   },
   "5-1-1": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-2": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-3": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-4": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-5": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-6": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-7": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-8": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-9": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-10": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-11": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-12": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: [],
   },
   "5-1-13": {
-    image: "/background/5-1-1.png",
+    image: "/background/5-1-1.webp",
     imagePreload: ["/background/5-2-1.webp"],
   },
   "5-2-1": {
@@ -674,19 +674,19 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     imagePreload: ["/background/6-2-1.png"],
   },
   "6-2-1": {
-    image: "/background/6-2-1.png",
-    imagePreload: ["/background/6-2-4.png"],
+    image: "/background/6-2-1.webp",
+    imagePreload: ["/background/6-2-4.webp"],
   },
   "6-2-4": {
-    image: "/background/6-2-4.png",
+    image: "/background/6-2-4.webp",
     imagePreload: [],
   },
   "6-2-5": {
-    image: "/background/6-2-4.png",
+    image: "/background/6-2-4.webp",
     imagePreload: [],
   },
   "6-2-6": {
-    image: "/background/6-2-4.png",
+    image: "/background/6-2-4.webp",
     imagePreload: ["/img/6-3-1.webp"],
   },
   "6-3-1": {
