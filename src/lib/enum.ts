@@ -23,7 +23,7 @@ export enum Motivation {
 
 export enum Season {
   InspiringFlames = "Inspiring Flames",
-  LifesCanvas = "Life’s Canvas",
+  LifesCanvas = "Life Canvas",
   HeartAndHome = "Heart & Home",
   RibbonsAndPaperBoxes = "Ribbons and Paper Boxes",
   TrophiesAndTriumphs = "Trophies and Triumphs",
@@ -50,21 +50,21 @@ export enum Obstacle {
 }
 
 export enum MarbleImg {
-  Marble1 = "/icons/marble/marble1.png",
-  Marble2 = "/icons/marble/marble2.png",
-  Marble3 = "/icons/marble/marble3.png",
-  Marble4 = "/icons/marble/marble4.png",
-  Marble5 = "/icons/marble/marble5.png",
-  Marble6 = "/icons/marble/marble6.png"
+  Marble1 = "/icons/marble/marble1.webp",
+  Marble2 = "/icons/marble/marble2.webp",
+  Marble3 = "/icons/marble/marble3.webp",
+  Marble4 = "/icons/marble/marble4.webp",
+  Marble5 = "/icons/marble/marble5.webp",
+  Marble6 = "/icons/marble/marble6.webp"
 }
 
 export const seasonImg = {
- "Inspiring Flame": {"img": ['/icons/seasons/bonfire.png','/icons/seasons/feather.png'], "w": ["w-[102.41px]", "w-[64.02px]"],  "h": ["h-[85px]", "h-[124.02px]"] },
-  "Trophies and Triumphs" : {"img":['/icons/seasons/trophies.png','/icons/seasons/confetti.png'], "w": ["w-[74.88px]", "w-[78px]"],"h": ["h-[69px]", "h-[92px]"]},
-  "Heart & Home": {"img":['/icons/seasons/home.png','/icons/seasons/fireflies.png'],"w": ["w-[78.15px]", "w-[85.38px]"],"h": ["h-[82px]", "h-[76px]"]},
-  "Life Canvas": {"img": ['/icons/seasons/canvas.png','/icons/seasons/origami.png'], "w": ["w-[146.09px]", "w-[81.09px]"],"h": ["h-[63px]", "h-[58px]"]},
-  "A Refilled Heart": {"img":['/icons/seasons/picnic.png','/icons/seasons/flowerpetal.png'], "w": ["w-[140px]","w-[82.42px]"],"h": ["h-[70px]", "h-[71px]"]},
-  "Ribbons and Paper Boxes":{ "img":['/icons/seasons/gift.png','/icons/seasons/foam.png'], "w": ["w-[81.49px]","w-[85.97px]"],"h": ["h-[76px]", "h-[72px]"] }
+ "Inspiring Flame": {"img": ['/icons/seasons/bonfire.webp','/icons/seasons/feather.webp'], "w": ["w-[102.41px]", "w-[64.02px]"],  "h": ["h-[85px]", "h-[124.02px]"] },
+  "Trophies and Triumphs" : {"img":['/icons/seasons/trophies.webp','/icons/seasons/confetti.webp'], "w": ["w-[74.88px]", "w-[78px]"],"h": ["h-[69px]", "h-[92px]"]},
+  "Heart & Home": {"img":['/icons/seasons/home.webp','/icons/seasons/fireflies.webp'],"w": ["w-[78.15px]", "w-[85.38px]"],"h": ["h-[82px]", "h-[76px]"]},
+  "Life Canvas": {"img": ['/icons/seasons/canvas.webp','/icons/seasons/origami.webp'], "w": ["w-[146.09px]", "w-[81.09px]"],"h": ["h-[63px]", "h-[58px]"]},
+  "A Refilled Heart": {"img":['/icons/seasons/picnic.webp','/icons/seasons/flowerpetal.webp'], "w": ["w-[140px]","w-[75.42px]"],"h": ["h-[70px]", "h-[65px]"]},
+  "Ribbons and Paper Boxes":{ "img":['/icons/seasons/gift.webp','/icons/seasons/foam.webp'], "w": ["w-[81.49px]","w-[85.97px]"],"h": ["h-[76px]", "h-[72px]"] }
 };
 
 

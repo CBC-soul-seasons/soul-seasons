@@ -4,15 +4,9 @@ import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
+import { MarbleImg } from "@/lib/enum";
 
-enum MarbleImg {
-  Marble1 = "/icons/marble/marble1.png",
-  Marble2 = "/icons/marble/marble2.png",
-  Marble3 = "/icons/marble/marble3.png",
-  Marble4 = "/icons/marble/marble4.png",
-  Marble5 = "/icons/marble/marble5.png",
-  Marble6 = "/icons/marble/marble6.png"
-}
+
 const Scene7_1_2 = () => {
 
   const marbleImg = { 
