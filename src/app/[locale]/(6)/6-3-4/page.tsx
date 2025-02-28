@@ -24,6 +24,7 @@ const Scene6_3Page4: React.FC = () => {
     const feedBack = String(localStorage.getItem("feedbackScore")) ;
   
     setUserData({ name, feelings, result, feedBack });
+    console.log("userData", userData);
   }, [feedbackScore]);
   
   
