@@ -136,9 +136,6 @@ export const useLogicCalculation = () => {
     const sortedWeight = [...weightedMotivations, ...weightedObstacles].sort(
       (a, b) => b.weight - a.weight
     );
-    console.log(weightedMotivations);
-    console.log(sortedWeight);
-    console.log(selectedMotivationSubConcept);
     setSortedSubConcepts(sortedWeight);
     setSeasons(SeasonDetermination(sortedWeight));
     setChapter(ChapterDetermination(sortedWeight));

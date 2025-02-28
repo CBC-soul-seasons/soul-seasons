@@ -22,8 +22,9 @@ const Scene6_3Page4: React.FC = () => {
     const feelings = Number(localStorage.getItem("stressScore")) ;
     const result =  {"season": seasons, "chapter": chapter} ;
     const feedBack = String(localStorage.getItem("feedbackScore")) ;
-    
+  
     setUserData({ name, feelings, result, feedBack });
+    console.log("userData", userData);
   }, [feedbackScore]);
   
   
@@ -35,6 +36,7 @@ const Scene6_3Page4: React.FC = () => {
     try {
       if (seasons && chapter) {
         await addUser(userData);
+        console.log("added user data", userData);
       }
       else {
         console.error("Error saving user data: seasons and chapter are required");
