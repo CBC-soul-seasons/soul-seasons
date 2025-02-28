@@ -113,14 +113,25 @@ body {
   appearance: none;
   width: 34px;
   height: 39px;
-  background: url("/icons/sliderthumb.png") no-repeat center;
+  background: url("/icons/sliderthumb.webp") no-repeat center;
   background-size: contain;
+  margin: 0px 14px;
   cursor: pointer;
 }
 
 /* Firefox */
 .custom-range::-moz-range-thumb {
-  background: url("/icons/sliderthumb.png") no-repeat center;
+  background: url("/icons/sliderthumb.webp") no-repeat center;
   background-size: contain;
+  margin: 0px 14px;
   cursor: pointer;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

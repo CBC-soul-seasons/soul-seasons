@@ -23,7 +23,7 @@ export enum Motivation {
 
 export enum Season {
   InspiringFlames = "Inspiring Flames",
-  LifesCanvas = "Life Canvas",
+  LifesCanvas = "Life’s Canvas",
   HeartAndHome = "Heart & Home",
   RibbonsAndPaperBoxes = "Ribbons and Paper Boxes",
   TrophiesAndTriumphs = "Trophies and Triumphs",

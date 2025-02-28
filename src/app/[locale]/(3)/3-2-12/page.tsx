@@ -65,7 +65,7 @@ const Page3_2_12 = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-[35%] right-[33%] w-16 h-16"
+        className="absolute bottom-[35%] right-[33%] w-16 h-16 animate-pulse"
         initial={{ opacity: 0, y: 0 }}
         animate={{
           opacity: hasClicked ? 0 : 1,
@@ -75,7 +75,7 @@ const Page3_2_12 = () => {
         exit={{ opacity: 0 }}
       >
         <button
-          className="w-full h-full rounded-full opacity-50 bg-[#D9D9D9]"
+          className="w-full h-full rounded-full bg-gradient-to-b from-[#D9D9D9] to-[#737373] opacity-50 bg-blend-luminosity shadow-touch cursor-pointer"
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}

@@ -23,7 +23,7 @@
     },
     "p3": {
       "s1": "If you feel uncomfortable at any point, you may stop immediately because ",
-      "s2": "your emotions come first. "
+      "s2": "your emotions come first."
     },
     "btn": "Noted"
   },
@@ -976,6 +976,18 @@
       "Life Canvas": "You have reached the peak of this season. Now that you truly understand your source of inspiration, do not waste time focusing on obstacles—you have overcome them time and time again. Move forward with determination and belief in yourself. The dream you have carefully crafted is about to take shape beautifully, just like colors coming together on the canvas of life. You are the artist of your own masterpiece—one that is uniquely yours and unlike any other.",
       "Refilled Heart": "Now, in the blossoming phase of this season, you have an abundance of love ready to be shared with yourself and your loved ones. Every obstacle you face becomes merely a stepping stone. With a heart overflowing with care, each step you take nourishes the tree of your relationships, allowing it to bloom and bear the fruits you have long awaited. Just a little while longer!",
       "Ribbons and Paper Boxes": "You are now in the season of full bloom. Your heart overflows with love and generosity, and every challenge has only been a stepping stone toward something greater. With a soul filled with inspiration, each act of kindness brings love to life. Just a little longer—your time is near."
+    }
+  },
+  "7-3-2": {
+    "p1": {
+      "s1": "The experience you see on your screen… is just",
+      "s2": "the beginning of the journey! ✨",
+      "s3": "Don’t let your experience end",
+      "s4": "on a mobile screen.",
+      "s5": "Immerse yourself in Soul Seasons",
+      "s6": "and feel every beautifully crafted element",
+      "s7": "come to life. Discover what can never truly",
+      "s8": "be conveyed through a screen."
     }
   }
   }

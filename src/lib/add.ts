@@ -1,3 +1,4 @@
+
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from './firebase-config';
 import { UserData } from '@/lib/enum';
@@ -13,3 +14,4 @@ export const addUser = async (userData: UserData) => {
     console.error('Error adding document:', error);
   }
 };
+
