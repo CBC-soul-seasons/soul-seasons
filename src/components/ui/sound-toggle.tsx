@@ -10,7 +10,7 @@ const SoundToggle = () => {
     <Button
       variant="ghost"
       onClick={toggle}
-      className="rounded-[8px] p-2 text-accent w-auto h-auto [&_svg]:w-6 [&_svg]:h-5 text-[#182649]"
+      className="rounded-[8px] p-2 text-accent w-auto h-auto [&_svg]:w-5 [&_svg]:h-5 "
     >
       {isPlaying ? <Volume2 /> : <VolumeX />}
     </Button>

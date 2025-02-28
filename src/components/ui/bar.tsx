@@ -38,7 +38,7 @@ const Bar: React.FC<BarProps> = ({
           <div
             className="absolute -top-12 rounded-full"
             style={{
-              left: `calc(${stressScore * 10}% - 20px)`, // Adjust position dynamically
+              left: `calc(${stressScore * 10}% - 14px)`, // Adjust position dynamically
             }}
           >
             <Marker stressScore={stressScore} />

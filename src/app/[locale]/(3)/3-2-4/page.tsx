@@ -101,7 +101,7 @@ const Page3_2_4 = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
       <motion.div
-        className="absolute bottom-[20%] right-[20%] w-16 h-16"
+        className="absolute bottom-[20%] right-[20%] w-16 h-16 animate-pulse"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, transition: { duration: 1 } }}
@@ -111,13 +111,10 @@ const Page3_2_4 = () => {
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
-          className="w-full h-full rounded-full cursor-pointer"
+          className="w-full h-full rounded-full bg-gradient-to-b from-[#D9D9D9] to-[#737373] opacity-50 bg-blend-luminosity shadow-touch cursor-pointer"
           initial={{ opacity: 0.5 }}
           animate={{ opacity: isTransparent ? 0 : 0.5 }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          style={{
-            backgroundColor: "#D9D9D9",
-          }}
         />
       </motion.div>
     </div>

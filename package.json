@@ -11,6 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@radix-ui/react-separator": "^1.1.2",
     "@next/third-parties": "^15.2.0",
     "@radix-ui/react-slot": "^1.1.1",
     "@vitest/eslint-plugin": "^1.1.24",
