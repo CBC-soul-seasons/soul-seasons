@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import SlideUnlock from "@/components/ui/slide-to-unlock";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
+import NextDisplay from "@/components/ui/nextDisplay";
 
 const Page0_8_17 = () => {
   const t = useTranslations("0-8-16");
   const [showText, setShowText] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
-  const [showUnlock, setShowUnlock] = useState(false);
 
   useEffect(() => {
     const showTimer = setTimeout(() => {
@@ -18,7 +18,6 @@ const Page0_8_17 = () => {
 
     const fadeTimer = setTimeout(() => {
       setFadeOut(true);
-      setShowUnlock(true);
     }, 4000);
 
     return () => {
@@ -62,16 +61,21 @@ const Page0_8_17 = () => {
         </motion.div>
       )}
 
-      {showUnlock && (
-        <motion.div
-          className="absolute bottom-[10%] left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ opacity: { duration: 1 } }}
-        >
-          <SlideUnlock nextPage="/0-8-19" />
-        </motion.div>
-      )}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          z: 10,
+          transition: { duration: 1, delay: 4 },
+        }}
+        exit={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="flex justify-center absolute top-[85%] inset-x-0"
+      >
+        <NextDisplay />
+      </motion.div>
+
+      <DelayedFullScreenLink href="0-8-19" delay={2000} />
     </motion.div>
   );
 };

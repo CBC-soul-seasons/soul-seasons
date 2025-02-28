@@ -15,7 +15,7 @@ const Page0_8_8 = () => {
 
     const fadeTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 4000);
+    }, 2000);
 
     return () => {
       clearTimeout(showTimer);

@@ -1,6 +1,8 @@
 "use client";
-import SlideUnlock from "@/components/ui/slide-to-unlock";
 import Image from "next/image";
+import NextDisplay from "@/components/ui/nextDisplay";
+import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
+import { motion } from "framer-motion";
 
 const Page0_8_9 = () => {
   return (
@@ -15,10 +17,21 @@ const Page0_8_9 = () => {
         objectFit="cover"
         className="absolute z-0"
       />
-      <SlideUnlock
-        nextPage="/0-8-10"
-        className="absolute top-[85%] left-1/2 transform -translate-x-1/2"
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          z: 10,
+          transition: { duration: 1, delay: 4 },
+        }}
+        exit={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="flex justify-center absolute top-[85%] inset-x-0"
+      >
+        <NextDisplay />
+      </motion.div>
+
+      <DelayedFullScreenLink href="0-8-2" delay={2000} />
     </div>
   );
 };

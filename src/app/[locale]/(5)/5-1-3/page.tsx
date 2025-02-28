@@ -16,10 +16,10 @@ const Page5_1_3 = () => {
   return (
     <div className="flex h-screen flex-col text-white items-center justify-center relative">
       <Image
-        src="/background/5-1-3.png"
+        src="/background/5-1-3.webp"
         alt="Tree"
         layout="fill"
-        objectFit="cover"
+
         className="absolute z-0"
       />
       <motion.div
