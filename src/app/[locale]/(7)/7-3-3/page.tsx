@@ -55,7 +55,7 @@ const Page7_3_3 = () => {
         <p>{t("p2.s2")}</p>
         <p>{t("p2.s3")}</p>
       </motion.div>
-      <div className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar top-[5%]">
+      <div className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar overflow-x-hidden top-[5%]">
         <div className="flex justify-center mt-10 mb-4">
           <Image
             src="/7-3-3/image 102.webp"
@@ -682,7 +682,6 @@ const Page7_3_3 = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1 } }}
       >
-        {/* Register Button */}
         <a
           href="https://www.zipeventapp.com/e/Soul-Seasons"
           target="_blank"
@@ -692,7 +691,6 @@ const Page7_3_3 = () => {
           {t("p10.s1")}
         </a>
 
-        {/* Back Button */}
         <a
           href="7-2"
           className="bg-[#182649] text-[16px] text-white font-bold w-[102px] h-[28px] flex items-center justify-center rounded-full shadow-md hover:bg-[#0f1a30] transition"
