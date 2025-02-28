@@ -1,6 +1,6 @@
 "use client";
 
-import SoulSeasons from "../../../../../public/icons/soul-season-main-logo.png";
+import SoulSeasons from "../../../../../public/icons/soul-season-main-logo.webp";
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";

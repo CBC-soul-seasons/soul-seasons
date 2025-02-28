@@ -63,6 +63,7 @@ export const useLogicCalculation = () => {
     const storedObstacles = localStorage.getItem("currentObstacles");
     const speedClicked = localStorage.getItem("speed");
   
+  
     if (storedMotivation) {
       try {
         const parsedMotivation = JSON.parse(storedMotivation);
@@ -73,7 +74,6 @@ export const useLogicCalculation = () => {
            item.name
           ))
         
-        console.log("🚀 Processed Motivation:", motivationList);
         setMotivation(motivationList);
       } catch (error) {
         console.error("Error parsing motivation:", error);
@@ -88,6 +88,7 @@ export const useLogicCalculation = () => {
       }
     }
   
+  
     if (speedClicked) {
       try {
         setSpeed(JSON.parse(speedClicked));
@@ -95,6 +96,7 @@ export const useLogicCalculation = () => {
         console.error("Error parsing speed:", error);
       }
     }
+  
   
     setDataLoaded(true);
   }, []);
@@ -134,9 +136,6 @@ export const useLogicCalculation = () => {
     const sortedWeight = [...weightedMotivations, ...weightedObstacles].sort(
       (a, b) => b.weight - a.weight
     );
-    console.log(weightedMotivations);
-    console.log(sortedWeight);
-    console.log(selectedMotivationSubConcept);
     setSortedSubConcepts(sortedWeight);
     setSeasons(SeasonDetermination(sortedWeight));
     setChapter(ChapterDetermination(sortedWeight));

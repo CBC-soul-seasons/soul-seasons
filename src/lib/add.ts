@@ -1,13 +1,17 @@
-import { collection, addDoc } from 'firebase/firestore';
+
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from './firebase-config';
 import { UserData } from '@/lib/enum';
 
-
-export const addUser = async (userData:UserData) => {
+export const addUser = async (userData: UserData) => {
   try {
-    const docRef = await addDoc(collection(db, 'users'), userData);
-    console.log('Document written with ID:', docRef.id);
+    const docRef = await addDoc(collection(db, 'soul-users'), {
+      ...userData, 
+      createdAt: serverTimestamp() // Add timestamp here
+    });
+    console.log("User added successfully! with ID: ", docRef.id);
   } catch (error) {
     console.error('Error adding document:', error);
   }
 };
+

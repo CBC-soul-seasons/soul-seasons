@@ -12,18 +12,18 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "0-1": {
     image: "/background/0.webp",
-    imagePreload: ["/background/0-blur.jpg"],
+    imagePreload: ["/background/0-blur.webp"],
   },
   "0-2": {
-    image: "/background/0-blur.jpg",
+    image: "/background/0-blur.webp",
     imagePreload: [],
   },
   "0-3-1": {
-    image: "/background/0-blur.jgp",
+    image: "/background/0-blur.webp",
     imagePreload: [],
   },
   "0-3-2": {
-    image: "/background/0-blur.jpg",
+    image: "/background/0-blur.webp",
     imagePreload: [],
   },
   "0-4-1": {
@@ -301,16 +301,16 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "2-2-1": {
     image: [
-      "/background/2-2-1-db.png",
-      "/background/2-2-1-blur.png",
-      "/background/2-2-1.png",
+      "/background/2-2-1-db.webp",
+      "/background/2-2-1-blur.webp",
+      "/background/2-2-1.webp",
     ],
     stopMotionDuration: 2000,
     redirectTo: "2-2-2",
-    imagePreload: ["/background/2-2-2.png"],
+    imagePreload: ["/background/2-2-2.webp"],
   },
-  "2-2-2": {
-    image: "/background/2-2-2.png",
+  "2-2-2":{
+    image: "/background/2-2-2.webp",
     stopMotionDuration: 1000,
     imagePreload: ["/background/2-2-4.webp"],
   },
@@ -748,7 +748,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     imagePreload: [],
   },
   "7-1-6": {
-    image: "/background/7-2-open.png",
+    image: "/background/7-2-open.webp",
     imagePreload: [],
   },
   "7-1-7-1": {

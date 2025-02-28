@@ -44,7 +44,7 @@ const Scene7_1_4 = () => {
                        </div>
                    </div>
 
-                   <div className="w-full gap-[5px] pl-8 h-auto flex justify-center items-center font-light text-primaryblue">
+                   <div className="w-full gap-8 pl-8 h-auto flex justify-center items-center font-light text-primaryblue">
                        <div className="text-[14px] h-auto font-light text-primaryblue">
                            <p className={`text-center ${blur ? "filter blur-sm dissolve" : ""}`}>
                                {t(`p2.${seasons}.s1`)}
@@ -53,7 +53,7 @@ const Scene7_1_4 = () => {
                            </p>
                        </div>
                        <div className={`${
-                           ["Trophies and Triumphs", "Life Canvas", "Refilled Heart", "Ribbons and Paper Boxes"].includes(seasons as string)
+                           [Season.TrophiesAndTriumphs,Season.LifesCanvas, Season.ARefilledHeart, Season.RibbonsAndPaperBoxes].includes(seasons)
                                ? "text-[18px] font-bold  flex flex-col items-center justify-center"
                                : "text-[18px] font-bold flex items-center justify-center"
                        }`}>
@@ -64,7 +64,7 @@ const Scene7_1_4 = () => {
                           className={`
                             ${seasonImg[seasons as keyof typeof seasonImg]?.["w"][1]} 
                             ${seasonImg[seasons as keyof typeof seasonImg]?.["h"][1]} 
-                            ${[Season.TrophiesAndTriumphs, Season.ARefilledHeart, Season.RibbonsAndPaperBoxes].includes(seasons)
+                            ${[Season.TrophiesAndTriumphs,Season.LifesCanvas, Season.ARefilledHeart, Season.RibbonsAndPaperBoxes].includes(seasons)
                               ? "" // No additional class needed
                               : "relative w-[75px] h-auto bottom-6"}
                             ${blur ? "filter blur-sm dissolve" : ""}

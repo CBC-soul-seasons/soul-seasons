@@ -8,7 +8,7 @@ const Scene032 = () => {
   const t = useTranslations("0-3-2");
 
   const locale = useLocale();
-  const imageSrc = locale === "th" ? "/icons/hidetabTh.png" : "/icons/hidetabEn.png";
+  const imageSrc = locale === "th" ? "/icons/hidetabTh.webp" : "/icons/hidetabEn.webp";
   
   return (
     <section className="w-full justify-center h-lvh flex flex-col">
@@ -40,7 +40,7 @@ const Scene032 = () => {
             BoxPadding="px-3 py-5"
           />
           <div className="flex justify-start items-center h-full flex-col gap-5 relative">
-            <img src="/icons/tab.png" />
+            <img src="/icons/tab.webp" />
             <div className=" absolute w-[27px] h-[27px] border-solid border-[2px] border-black rounded-[100%] top-[9px] left-[25px] " />
             <img src={imageSrc} />
             <div className=" absolute w-[220px] h-[32px] border-solid border-[2px] border-black rounded-[12px] top-[160px] " />
