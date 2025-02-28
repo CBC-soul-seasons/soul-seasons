@@ -21,7 +21,7 @@ const LocaleLayout = async ({ children, params }: LayoutProps) => {
   return (
     <html lang={locale}>
       <GoogleAnalytics
-        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-XXFTSN0KNW"}
+        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-R2XJY603HD"}
       />
       <body className="relative mx-auto min-h-screen w-full max-w-md overflow-x-hidden overscroll-none">
         <AnimatedLayout fontClass={fontClass}>{children}</AnimatedLayout>

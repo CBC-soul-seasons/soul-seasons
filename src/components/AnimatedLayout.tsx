@@ -6,6 +6,7 @@ import SoundToggle from "@/components/ui/sound-toggle";
 import LangToggle from "@/components/ui/lang-toggle";
 import InteractiveBackground from "@/components/interactive-background";
 import { PropsWithChildren } from "react";
+import { Separator } from "./ui/separator";
 
 interface AnimatedLayoutProps extends PropsWithChildren {
   fontClass: string;
@@ -37,6 +38,7 @@ const AnimatedLayout = ({ fontClass, children }: AnimatedLayoutProps) => {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <LangToggle />
+        <Separator orientation="vertical" className="h-7" />
         <SoundToggle />
       </motion.div>
 
