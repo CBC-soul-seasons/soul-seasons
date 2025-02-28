@@ -11,7 +11,7 @@ const Page0_8_29 = () => {
       className="flex h-screen items-center justify-center relative"
     >
       <Image
-        src="/0-8/0-8-tint.png"
+        src="/0-8/0-8-tint.webp"
         alt="Tree"
         layout="fill"
         objectFit="cover"

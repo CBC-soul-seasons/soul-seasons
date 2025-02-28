@@ -362,8 +362,8 @@
       "health": "Health",
       "spiritual": "Spiritual"
     },
-    "p1":{
-      "s1":"What is the motivation behind your goal? ",
+    "p1": {
+      "s1": "What is the motivation behind your goal? ",
       "s2": "Help add some fertilizer to your tree.",
       "s3": ""
     },
@@ -672,34 +672,34 @@
   "6-3-10": {
     "iHope": "I hope you’ll take time to reflect on your\nfeelings and not lose yourself so often."
   },
-  "7-1-2":{
-    "title":{
+  "7-1-2": {
+    "title": {
       "Inspiring Flame": {
         "s1": "Cedar ",
         "s2": "The Season of Bonfires and Inspiration"
       },
-      "Trophies and Triumphs" :{
+      "Trophies and Triumphs": {
         "s1": "Olive ",
         "s2": "The Season of Trophies and Triumphs"
       },
-      "Heart & Home" :{
+      "Heart & Home": {
         "s1": "Oak ",
         "s2": "The Season of a Warm and Strong Home"
       },
-      "Life Canvas":{
+      "Life Canvas": {
         "s1": "Maple",
         "s2": "The Season of Canvases and Life’s Colors"
       },
-      "A Refilled Heart":{
+      "A Refilled Heart": {
         "s1": "Crape Mrytle",
         "s2": "The Season of A Refilled Heart"
       },
-      "Ribbons and Paper Boxes":{
+      "Ribbons and Paper Boxes": {
         "s1": "Wisteria",
         "s2": "The Season of Ribbons and Gift Boxes"
       }
     },
-  "p1": {
+    "p1": {
       "Inspiring Flame": {
         "s1": "Orange-red flames dance above the firewood, with ",
         "s2": "crackling embers harmonizing with the cold ",
@@ -712,178 +712,178 @@
         "s9": "",
         "s10": "",
         "s11": ""
-      }, 
-        "Trophies and Triumphs": {
-          "s1": "The sun casts radiant golden light ",
-          "s2": "through a gentle veil of mist, gradually unveiling",
-          "s3": " Hall of Honor with its doors agape in ",
-          "s4": "welcome. In this season, you have earned ",
-          "s5": "trophies that serve as accolades and ",
-          "s6": "emblems of success—ripe rewards borne of ",
-          "s7": "your relentless pursuit of grand ambitions.",
-          "s8": "",
-          "s9": "",
-          "s10": "",
-          "s11": ""
-        },
-        "Heart & Home": {
-          "s1": "The warmth of the fireplace has begun to",
-          "s2": "fade, yet the home feels even cozier, as if it ",
-          "s3": "has embraced you in its familiar shelter. You",
-          "s4": "are in a season of stability and success—both",
-          "s5": "in your goals and your relationships. After ",
-          "s6": "all the effort you have put in, you have built ",
-          "s7": "a home that is both warm and strong, a safe",
-          "s8": "space for yourself and your loved ones.",
-          "s9": "",
-          "s10": "",
-          "s11": ""
-        },
-        "Life Canvas": {
-          "s1": "A gentle breeze flows through a blank canvas ",
-          "s2": "standing under the sunlight. The soft white",
-          "s3": "surface glows, waiting for the first stroke of the",
-          "s4": "brush to bring it to life with vibrant colors. At",
-          "s5": "the heart of this season of creation, listening to ",
-          "s6": "your inner voice is the first step in painting your",
-          "s7": "life. Just like an artist who carefully breathes life ",
-          "s8": "into their imagination, your canvas is one of a",
-          "s9": "kind—beautiful in its own unique way. Every",
-          "s10": "color you add is a joy you create for yourself in",
-          "s11": "this season."
-        },
-        "A Refilled Heart": {
-          "s1": "The lingering fragrance of flowers drifts on ",
-          "s2": "the breeze in a garden teeming with life, ",
-          "s3": "laughter, and warmth. It feels as if the once",
-          "s4": "chaotic world has paused for a moment, ",
-          "s5": "leaving only this overwhelming sense of ",
-          "s6": "fulfillment. Your heart has been refilled with",
-          "s7": "profoundly meaningful experiences—the joy",
-          "s8": "of sharing memories and special moments",
-          "s9": "with those who matter most.",
-          "s10": "",  
-          "s11": ""
-        },
-        "Ribbons and Paper Boxes": {
-          "s1": "Cardboard boxes stack high above your head,",
-          "s2": "and vibrant ribbons scatter like a rainbow of",
-          "s3": "joy. Gift boxes fill the floor, yet they still cannot",
-          "s4": "contain all the love within them. You are in a ",
-          "s5": "season of giving and abundant love—where ",
-          "s6": "both you and those around you share your ",
-          "s7": "hearts with one another. The air is filled with ",
-          "s8": "kindness, generosity, and the deep ",
-          "s9": "connections that bind us together.",
-          "s10": "",
-          "s11": ""
-        }
+      },
+      "Trophies and Triumphs": {
+        "s1": "The sun casts radiant golden light ",
+        "s2": "through a gentle veil of mist, gradually unveiling",
+        "s3": " Hall of Honor with its doors agape in ",
+        "s4": "welcome. In this season, you have earned ",
+        "s5": "trophies that serve as accolades and ",
+        "s6": "emblems of success—ripe rewards borne of ",
+        "s7": "your relentless pursuit of grand ambitions.",
+        "s8": "",
+        "s9": "",
+        "s10": "",
+        "s11": ""
+      },
+      "Heart & Home": {
+        "s1": "The warmth of the fireplace has begun to",
+        "s2": "fade, yet the home feels even cozier, as if it ",
+        "s3": "has embraced you in its familiar shelter. You",
+        "s4": "are in a season of stability and success—both",
+        "s5": "in your goals and your relationships. After ",
+        "s6": "all the effort you have put in, you have built ",
+        "s7": "a home that is both warm and strong, a safe",
+        "s8": "space for yourself and your loved ones.",
+        "s9": "",
+        "s10": "",
+        "s11": ""
+      },
+      "Life Canvas": {
+        "s1": "A gentle breeze flows through a blank canvas ",
+        "s2": "standing under the sunlight. The soft white",
+        "s3": "surface glows, waiting for the first stroke of the",
+        "s4": "brush to bring it to life with vibrant colors. At",
+        "s5": "the heart of this season of creation, listening to ",
+        "s6": "your inner voice is the first step in painting your",
+        "s7": "life. Just like an artist who carefully breathes life ",
+        "s8": "into their imagination, your canvas is one of a",
+        "s9": "kind—beautiful in its own unique way. Every",
+        "s10": "color you add is a joy you create for yourself in",
+        "s11": "this season."
+      },
+      "A Refilled Heart": {
+        "s1": "The lingering fragrance of flowers drifts on ",
+        "s2": "the breeze in a garden teeming with life, ",
+        "s3": "laughter, and warmth. It feels as if the once",
+        "s4": "chaotic world has paused for a moment, ",
+        "s5": "leaving only this overwhelming sense of ",
+        "s6": "fulfillment. Your heart has been refilled with",
+        "s7": "profoundly meaningful experiences—the joy",
+        "s8": "of sharing memories and special moments",
+        "s9": "with those who matter most.",
+        "s10": "",
+        "s11": ""
+      },
+      "Ribbons and Paper Boxes": {
+        "s1": "Cardboard boxes stack high above your head,",
+        "s2": "and vibrant ribbons scatter like a rainbow of",
+        "s3": "joy. Gift boxes fill the floor, yet they still cannot",
+        "s4": "contain all the love within them. You are in a ",
+        "s5": "season of giving and abundant love—where ",
+        "s6": "both you and those around you share your ",
+        "s7": "hearts with one another. The air is filled with ",
+        "s8": "kindness, generosity, and the deep ",
+        "s9": "connections that bind us together.",
+        "s10": "",
+        "s11": ""
       }
-    },
-    "7-1-4":{
-      "title":{
-        "Inspiring Flame":{
-          "s1":"Bonfire",
-          "s2": "Feather"
-        },
-       "Trophies and Triumphs": {
+    }
+  },
+  "7-1-4": {
+    "title": {
+      "Inspiring Flame": {
+        "s1": "Bonfire",
+        "s2": "Feather"
+      },
+      "Trophies and Triumphs": {
         "s1": "Trophies",
         "s2": "Confetti"
-       },
-       "Heart & Home": {
+      },
+      "Heart & Home": {
         "s1": "Home",
         "s2": "Fireflies"
-       },
-       "Life Canvas": {
+      },
+      "Life Canvas": {
         "s1": "Canvas",
         "s2": "Origami"
-       },
-       "A Refilled Heart":{
+      },
+      "A Refilled Heart": {
         "s1": "Picnic Basket",
         "s2": "Flower Petals"
-       },
-       "Ribbons and Paper Boxes": {
+      },
+      "Ribbons and Paper Boxes": {
         "s1": "Gift Boxes",
         "s2": "Foam Balls"
-       }
-      },
+      }
+    },
 
-    "p1":{
+    "p1": {
       "Inspiring Flame": {
         "s1": "A bonfire has the power ",
         "s2": "to burn away the old and",
         "s3": "transform it into energy",
         "s4": "for new beginnings."
       },
-      "Trophies and Triumphs":{
+      "Trophies and Triumphs": {
         "s1": "Trophies remind us that",
         "s2": "we have achieved the",
         "s3": "goals we set, whether",
         "s4": "bsmall or grand."
       },
-      "Heart & Home":{
+      "Heart & Home": {
         "s1": "A place of refuge and comfort.",
         "s2": "",
         "s3": "",
         "s4": ""
       },
-      "Life Canvas":{
+      "Life Canvas": {
         "s1": "A space for artists to create,",
         "s2": "express thoughts, emotions,",
         "s3": "and imagination.",
         "s4": ""
       },
-      "A Refilled Heart":{
+      "A Refilled Heart": {
         "s1": "We go for picnics to spend ",
         "s2": "quality time together, ",
         "s3": "letting our hearts rest.",
         "s4": ""
       },
-      "Ribbons and Paper Boxes":{
+      "Ribbons and Paper Boxes": {
         "s1": "Thoughtfully prepared ",
         "s2": "with care, inside and out.",
         "s3": "",
         "s4": ""
       }
     },
-    "p2":{
+    "p2": {
       "Inspiring Flame": {
         "s1": "A feather drifts freely,",
         "s2": "light and unbound,",
         "s3": "soaring without limits.",
         "s4": ""
       },
-      "Trophies and Triumphs":{
+      "Trophies and Triumphs": {
         "s1": "We scatter vibrant,",
         "s2": "multicolored confetti to",
         "s3": "share those joyful ",
         "s4": "moments with others."
       },
-      "Heart & Home":{
+      "Heart & Home": {
         "s1": "Found in warm and ",
         "s2": "nurturing environments.",
         "s3": "",
         "s4": ""
       },
-      "Life Canvas":{
+      "Life Canvas": {
         "s1": "A simple sheet of paper that, ",
         "s2": "when folded with care, ",
         "s3": "transforms into intricate",
         "s4": "and beautiful shapes."
       },
-      "A Refilled Heart":{
+      "A Refilled Heart": {
         "s1": "The Crape Myrtle ",
         "s2": "blossoms are gifted to",
         "s3": "Venus, symbolizing ",
         "s4": "everlasting love."
       },
-      "Ribbons and Paper Boxes":{
+      "Ribbons and Paper Boxes": {
         "s1": "Colorful, diverse, and ",
         "s2": "beautiful together.",
-        "s3":""
+        "s3": ""
       }
     },
-    "p3":{
+    "p3": {
       "Inspiring Flame": {
         "s1": "This season signifies the bonfire burning in your",
         "s2": "heart, fueled by the firewood of various aspects of",
@@ -894,7 +894,7 @@
         "s7": "meaning of life and ignite change that leaves a ",
         "s8": "lasting impact on the world."
       },
-      "Trophies and Triumphs":{
+      "Trophies and Triumphs": {
         "s1": "This season signifies progress and the abundant",
         "s2": "drive within you. You possess a clear vision of",
         "s3": "your desires and remain undaunted in chasing ",
@@ -904,7 +904,7 @@
         "s7": "",
         "s8": ""
       },
-      "Heart & Home":{
+      "Heart & Home": {
         "s1": "This season reflects the dedication and love",
         "s2": "within you. You stay committed to your ",
         "s3": "goals with determination and perseverance ",
@@ -914,7 +914,7 @@
         "s7": "an integral part of who you are.",
         "s8": ""
       },
-      "Life Canvas":{
+      "Life Canvas": {
         "s1": "This season represents the harmony of",
         "s2": "both physical and mental readiness,",
         "s3": "forming the foundation that makes life’s ",
@@ -927,7 +927,7 @@
         "s10": "create will not only be beautiful but also",
         "s11": "meaningful and inspiring to others."
       },
-      "A Refilled Heart":{
+      "A Refilled Heart": {
         "s1": "This season signifies strong bonds and the ",
         "s2": "nurturing of body and soul. You have",
         "s3": "discovered happiness in the little things",
@@ -937,7 +937,7 @@
         "s7": "with genuine care and affection.",
         "s8": ""
       },
-      "Ribbons and Paper Boxes":{
+      "Ribbons and Paper Boxes": {
         "s1": "This season reflects the boundless love ",
         "s2": "within you, always ready to be shared",
         "s3": "with those around you—family, friends,",
@@ -989,7 +989,77 @@
       "s7": "come to life. Discover what can never truly",
       "s8": "be conveyed through a screen."
     }
+  },
+  "7-3-3": {
+    "slide": "Slide to see exhibition detail",
+    "email": "soulseasons24@gmail.com",
+    "ig": "cbc.exhibit",
+    "tel": "096-954-9900 (K.Bobby)",
+    "contact": "Contact Us",
+    "p1": {
+      "s1": "Soul Seasons",
+      "s2": "An interactive exhibition with a journey to",
+      "s3": "embrace yourself through the",
+      "s4": "ever-changing seasons and time, for every",
+      "s5": "shade and feeling in each season brings their own unique beauty.",
+      "s6": "“The seasons are like the events that pass through our lives—eventually flowing away with time. They bring a mix of emotions: some good, some bad, all intertwined. But no matter what, happiness and joy will eventually find its way back.",
+      "s7": "Sometimes, even after an event has passed, lingering feelings remain. Soul Seasons invites you to embark on a journey through five seasons of the soul. Pause for a moment, explore the feelings within, reflect on the stories and emotions that may have been overlooked in previous seasons, without ever giving yourself a chance to explore, or neglecting the true emotions within your heart.",
+      "s8": "No matter which season your heart finds itself in—whether it's the rain that clouds your heart, the vibrant bloom of spring, the lonely chill of winter, or the fading whispers of autumn—in the end, you can fully embrace every emotion that colors your essence, be it joy or sorrow.",
+      "s9": "If you're ready to explore the changing seasons of your soul, let your heart wander freely through the skies, rain, winds, and sunlight within.”",
+      "s10": "You can meet us at",
+      "s11": "GalileOasis, Ratchathewi",
+      "s12": "March 20 - 31, 2025",
+      "s13": "10:00 a.m. - 6:00 p.m.",
+      "s14": "(closed every Tuesday)",
+      "s15": "Free entry.",
+      "s16": "Click for register",
+      "s17": " to join the exhibition",
+      "s18": "here."
+    },
+    "p2": {
+      "s1": "Book your tickets now at [ticketing channel] ",
+      "s2": "and join us in a journey of self-discovery ",
+      "s3": "through the changing seasons!"
+    },
+    "p3": {
+      "s1": "MERCHANDISE",
+      "s2": "💫 More Than Just Merch : A tangible",
+      "s3": "reminder of your journey",
+      "s4": "Get yours at the exhibition!"
+    },
+    "p4": {
+      "s1": "DONATION",
+      "s2": "Support us here",
+      "s3": "K Bank",
+      "s4": "Account Number:",
+      "s5": "198-2-46139-8",
+      "s6": "Account name:",
+      "s7": "นางสาว สาริชฌิตา ปทุมนากุล"
+    },
+    "p5": {
+      "s1": "ORGANIZED BY"
+    },
+    "p6": {
+      "s1": "Zipevent",
+      "s2": "https://www.zipeventapp.com"
+    },
+    "p7": {
+      "s1": "Anywheel",
+      "s2": "“Anywheel connecting people connecting places”"
+    },
+    "p8": {
+      "s1": "SPONSERED BY",
+      "s2": "Are you interested in",
+      "s3": "sponsoring/ collaborating with us?"
+    },
+    "p9": {
+      "s1": "ILLUSTRATION BY",
+      "s2": "tabsungnoensiraphat@gmail.com",
+      "s3": "papapapaparewa"
+    },
+    "p10": {
+      "s1": "Register",
+      "s2": "Back"
+    }
   }
-  }
-  
-
+}

@@ -12,7 +12,7 @@ const Page5_1_9 = () => {
   return (
     <div className="flex h-screen flex-col text-white items-center justify-center relative">
       <Image
-        src="/background/5-1-9.png"
+        src="/background/5-1-9.webp"
         alt="Tree"
         layout="fill"
         objectFit="cover"

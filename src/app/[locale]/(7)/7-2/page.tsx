@@ -144,7 +144,7 @@ const Scene7_2: React.FC = () => {
           }}
           className="flex justify-center"
         >
-          <NextButton url="7-3-1" />
+          <NextButton url="7-3-2" />
         </motion.div>
       </div>
     </div>
