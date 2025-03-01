@@ -23,10 +23,8 @@ const Page2_1_5 = () => {
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
         <p>
-          {importantPerson} : {t("p1.s1")}"
+          {importantPerson} : "{t("p1.s1")}"
         </p>
-        <p>{t("p1.s2")}</p>
-        <p>{t("p1.s3")}</p>
       </motion.div>
 
       <DelayedFullScreenLink href="2-1-6" delay={2000} />

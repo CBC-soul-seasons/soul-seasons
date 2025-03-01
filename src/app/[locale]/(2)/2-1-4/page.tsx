@@ -22,7 +22,7 @@ const Page2_1_4 = () => {
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
         <p>
-          {name} : {goal}
+          {name} : "{goal}
           {t("p1.s1")}"
         </p>
       </motion.div>

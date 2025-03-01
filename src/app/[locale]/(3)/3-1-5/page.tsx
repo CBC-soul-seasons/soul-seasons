@@ -42,6 +42,8 @@ const Scene3_1_5 = () => {
           {t("title.s2")}
           <br />
           {t("title.s3")}
+          <br />
+          {t("title.s4")}
         </p>
       </motion.div>
 

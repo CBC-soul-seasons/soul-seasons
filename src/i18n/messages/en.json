@@ -293,9 +293,7 @@
   },
   "2-1-5": {
     "p1": {
-      "s1": "\"Speaking of ",
-      "s2": "that... what’s your inspiration behind",
-      "s3": "that goal?"
+      "s1": "Speaking of that... what’s your inspiration behind that goal?"
     },
     "importantPerson": "Important Person"
   },
@@ -405,7 +403,8 @@
     "title": {
       "s1": "From the goals you’ve set, what",
       "s2": "are the obstacles that keep you",
-      "s3": "from reaching them?"
+      "s3": "from reaching them?",
+      "s4": "(Please select 3 items)"
     },
     "p1": {
       "NotGoodEnough": "I'm not good enough.",
