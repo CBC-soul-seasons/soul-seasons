@@ -42,9 +42,9 @@ const Page7_3_3 = () => {
   }, []);
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center gap-y-3 flex-col">
       <motion.div
-        className="text-center text-white absolute top-[12%] "
+        className="text-center text-white"
         style={{
           fontSize: "14px",
         }}
@@ -56,7 +56,7 @@ const Page7_3_3 = () => {
         <p>{t("p2.s3")}</p>
       </motion.div>
       <motion.div
-        className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar overflow-x-hidden top-[5%]"
+        className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar overflow-x-hidden "
         initial={{ opacity: 0, z: -20 }}
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
@@ -682,7 +682,7 @@ const Page7_3_3 = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-3 transform -translate-x-1/2 flex flex-col space-y-2 items-center"
+        className="transform -translate-x-1/2 top-[2%] relative flex flex-col space-y-2 items-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 1 } }}
       >
