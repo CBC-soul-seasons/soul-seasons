@@ -31,7 +31,7 @@ const Page0_8_9 = () => {
         <NextDisplay />
       </motion.div>
 
-      <DelayedFullScreenLink href="0-8-2" delay={2000} />
+      <DelayedFullScreenLink href="0-8-10" delay={2000} />
     </div>
   );
 };
