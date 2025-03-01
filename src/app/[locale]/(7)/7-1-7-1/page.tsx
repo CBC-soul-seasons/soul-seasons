@@ -21,7 +21,15 @@ const Page7_1_7_1 = () => {
 
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
-      <motion.div className="flex flex-col gap-4 text-center absolute top-[35%] right-[13%] w-2/3">
+      <motion.div
+        initial={{ opacity: 0, filter: "blur(10px)" }}
+        animate={{
+          opacity: 1,
+          filter: "blur(0px)",
+          transition: { duration: 1, delay: 0 },
+        }}
+        className="flex flex-col gap-4 text-center absolute top-[35%] right-[13%] w-2/3"
+      >
         <Bar stressScore={1} showLabel={false} />
         <span className="font-semibold text-xl">{t("earlySeason")}</span>
         <p style={{ fontSize: textSize }}>{translatedText}</p>
