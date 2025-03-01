@@ -36,10 +36,10 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "0-5": {
     image: "/background/0.webp",
-    imagePreload: ["/background/0-7-1.png"],
+    imagePreload: ["/background/0-7-1.webp"],
   },
   "0-6": {
-    image: "/background/0-7-1.png",
+    image: "/background/0-7-1.webp",
     imagePreload: [],
   },
   "0-7-1": {
@@ -137,32 +137,32 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
   },
   "0-8-28": {
     image: "/0-8/0-8-bg.webp",
-    imagePreload: ["/0-8/0-8-29.png"],
+    imagePreload: ["/0-8/0-8-29.webp"],
     stopMotionDuration: 2000,
     redirectTo: "0-8-29",
   },
   "0-8-29": {
-    image: "/0-8/0-8-29.png",
-    imagePreload: ["/0-8/0-8-30.png"],
+    image: "/0-8/0-8-29.webp",
+    imagePreload: ["/0-8/0-8-30.webp"],
     stopMotionDuration: 2000,
     redirectTo: "0-8-30",
   },
   "0-8-30": {
-    image: "/0-8/0-8-30.png",
+    image: "/0-8/0-8-30.webp",
     imagePreload: [],
     stopMotionDuration: 2000,
     redirectTo: "1-1-1",
   },
   "1-1-1": {
-    image: "/0-8/0-8-30.png",
+    image: "/0-8/0-8-30.webp",
     imagePreload: [],
   },
   "1-1-2": {
-    image: "/0-8/0-8-30.png",
+    image: "/0-8/0-8-30.webp",
     imagePreload: [],
   },
   "1-1-3": {
-    image: "/background/1-1-3.png",
+    image: "/background/1-1-3.webp",
     imagePreload: [],
   },
   "1-2-1": {
@@ -257,7 +257,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     ],
     stopMotionDuration: 1000,
     redirectTo: "2-1-1",
-    imagePreload: ["/background/2-1.png"],
+    imagePreload: ["/background/2-1.webp"],
   },
   "2-1-1": {
     image: "/background/2-1.webp",
@@ -309,7 +309,7 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     redirectTo: "2-2-2",
     imagePreload: ["/background/2-2-2.webp"],
   },
-  "2-2-2":{
+  "2-2-2": {
     image: "/background/2-2-2.webp",
     stopMotionDuration: 1000,
     imagePreload: ["/background/2-2-4.webp"],
@@ -734,16 +734,16 @@ export const backgroundMapConfig: Record<string, backgroundConfig> = {
     imagePreload: [],
   },
   "7-1-1": {
-    image: "/background/7-1-1.png",
-    imagePreload: ["/background/7-1-2.png"],
+    image: "/background/7-1-1.webp",
+    imagePreload: ["/background/7-1-2.webp"],
   },
   "7-1-2": {
-    image: ["/background/7-1-2.png", "/background/7-1-3.png"],
+    image: ["/background/7-1-2.webp", "/background/7-1-3.webp"],
     stopMotionDuration: 1000,
-    imagePreload: ["/background/7-1-2.png"],
+    imagePreload: ["/background/7-1-2.webp"],
   },
   "7-1-4": {
-    image: ["/background/7-1-2.png", "/background/7-1-3.png"],
+    image: ["/background/7-1-2.webp", "/background/7-1-3.webp"],
     stopMotionDuration: 1000,
     imagePreload: [],
   },
