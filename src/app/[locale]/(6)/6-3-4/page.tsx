@@ -4,7 +4,6 @@ import NextButton from "@/components/ui/NextButton";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
-import { addUser } from "@/lib/add";
 import { UserData } from "@/lib/enum";
 import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
 
@@ -28,16 +27,22 @@ const Scene6_3Page4: React.FC = () => {
       return;
     }
     try {
-      if (seasons && chapter) {
-        await addUser(userData);
-        console.log("added user data", userData);
-      } else {
-        console.error(
-          "Error saving user data: seasons and chapter are required"
-        );
+      const response = await fetch("/api/add-user", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error("Error saving user data:", data.message);
+        return;
       }
+
+      console.log("User data added successfully:", data);
     } catch (error) {
-      console.error("Error saving user data:", error);
+      console.error("Network error:", error);
     }
   };
   return (
@@ -78,7 +83,7 @@ const Scene6_3Page4: React.FC = () => {
         exit={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <NextButton url="6-3-5" disabled={!mouseDown} onClick={handleClick} />
+        <NextButton disabled={!mouseDown} onClick={handleClick} />
       </motion.div>
     </div>
   );
