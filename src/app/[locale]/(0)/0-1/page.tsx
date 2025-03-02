@@ -1,7 +1,5 @@
 "use client";
 
-import SoulSeasons from "../../../../../public/icons/soul-season-main-logo.webp";
-
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import NextButton from "@/components/ui/NextButton";
@@ -16,18 +14,18 @@ const Scene01: React.FC = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 1 , y:0}}
+          exit={{ opacity: 1, y: 0 }}
           transition={{
             duration: 1,
             delay: 1,
           }}
           className="flex flex-col items-center text-center text-base text-woh-black"
         >
-<img 
-  src={SoulSeasons.src} 
-  alt="Soul Seasons Logo" 
-  className="w-[300px] h-[300px] transform -rotate-[10deg]" 
-/>
+          <img
+            src={"/icons/soul-season-main-logo.webp"}
+            alt="Soul Seasons Logo"
+            className="w-[300px] h-[300px] transform -rotate-[10deg]"
+          />
         </motion.div>
 
         <motion.div
