@@ -2,8 +2,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Check from "../../../../../public/icons/ei_check.webp";
-import Selected from "../../../../../public/icons/selected.webp";
 import NextButton from "@/components/ui/NextButton";
 import { Obstacle } from "@/lib/enum";
 
@@ -82,7 +80,9 @@ const Scene3_1_5 = () => {
                 onClick={() => handleClick(obstacleCode)}
               >
                 <img
-                  src={isSelected ? Selected.src : Check.src}
+                  src={
+                    isSelected ? "/icons/selected.webp" : "/icons/ei_check.webp"
+                  }
                   alt="Checkmark"
                   className={`w-5 h-5 mr-2 ${
                     isSelected ? "opacity-100" : "opacity-25"
