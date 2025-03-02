@@ -83,7 +83,7 @@ const Scene6_3Page4: React.FC = () => {
         exit={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <NextButton disabled={!mouseDown} onClick={handleClick} />
+        <NextButton url="6-3-5" disabled={!mouseDown} onClick={handleClick} />
       </motion.div>
     </div>
   );
