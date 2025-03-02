@@ -66,7 +66,6 @@ const AnimatedImage = ({
           {...props}
           className="hidden"
           onLoad={() => {
-            // eslint-disable-next-line no-console
             console.log(`preloaded image: ${source}`);
           }}
         />
