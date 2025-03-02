@@ -78,4 +78,5 @@ export type UserData = {
      feelings: number;       // Pre/Post Feelings (1-10)
      result: Result;        // Result ที่ได้
      feedBack: string       // Feedback Website
+     feelingsAfter: number; // Post Feelings (1-10)
 }
