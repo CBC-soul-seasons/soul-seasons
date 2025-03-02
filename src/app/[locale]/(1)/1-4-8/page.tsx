@@ -20,7 +20,7 @@ const Scene1_4Page8: React.FC = () => {
         Goals!
       </motion.div>
       <motion.div
-        className="absolute top-[58%] right-[24%] w-32 h-36 text-start text-[15px] font-light font-th"
+        className="absolute top-[58%] right-[24%] w-32 h-36 text-start text-[15px] font-light font-th break-words"
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 1, y: 0 }}

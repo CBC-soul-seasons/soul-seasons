@@ -18,22 +18,17 @@ const Scene5_2Page4: React.FC = () => {
         setClickCount((prev) => prev + 1);
         const currentClickCount = clickCount;
 
-        // clear previous timeout and set new timeout
         if (timeoutId) {
           clearTimeout(timeoutId);
         }
         const newTimeoutId = setTimeout(() => {
           if (currentClickCount === clickCount) {
-            // console.log("timeout", currentClickCount, clickCount)
             router.push("/5-2-7");
           }
         }, 3000);
-        // console.log("currentClickCount", currentClickCount, timeoutId, newTimeoutId)
         setTimeoutId(newTimeoutId);
 
-        // cutoff timer
         setTimeout(() => {
-          // console.log("cutoff timer")
           router.push("/5-2-7");
         }, 15000);
       }}
