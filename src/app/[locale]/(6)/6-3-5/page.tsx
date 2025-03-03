@@ -21,9 +21,9 @@ const Scene6_3Page4: React.FC = () => {
     const feelings = Number(localStorage.getItem("stressScore")) ;
     const result =  {"season": seasons, "chapter": chapter} ;
     const feedBack = String(localStorage.getItem("feedbackScore")) ;
-    const feelingAfter = Number(localStorage.getItem("stressAfterScore")) ;
+    const feelingsAfter = Number(localStorage.getItem("stressAfterScore")) ;
   
-    setUserData({ name, feelings, result, feedBack, feelingAfter });
+    setUserData({ name, feelings, result, feedBack, feelingsAfter });
     console.log("userData", userData);
   }, [stressAfterScore]);
   
