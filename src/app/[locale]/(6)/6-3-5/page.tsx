@@ -7,7 +7,6 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { UserData } from "@/lib/enum";
 import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
-import { addUser } from "@/lib/add";
 
 const Scene6_3Page4: React.FC = () => {
   const t = useTranslations("6-3-5");
@@ -30,20 +29,26 @@ const Scene6_3Page4: React.FC = () => {
   
 
   const handleClick = async () => {
-    if (!userData){
+    if (!userData) {
       return;
-    } ;
+    }
     try {
-      if (seasons && chapter) {
-        await addUser(userData);
-        console.log("added user data", userData);
+      const response = await fetch("/api/add-user", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error("Error saving user data:", data.message);
+        return;
       }
-      else {
-        console.error("Error saving user data: seasons and chapter are required");
-      }
-      
+
+      console.log("User data added successfully:", data);
     } catch (error) {
-      console.error("Error saving user data:", error);
+      console.error("Network error:", error);
     }
   };
   
