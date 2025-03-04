@@ -19,7 +19,7 @@ const Page5_1_12 = () => {
         className="absolute z-0"
       />
       <motion.div
-        className="text-center text-white absolute top-[77%] "
+        className="text-center text-white font-light drop-shadow-text leading-[24.68px] absolute top-[77%] "
         style={{
           fontSize: "18px",
         }}
