@@ -15,7 +15,7 @@ const Page2_1_5 = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
       <motion.div
-        className="text-center text-white absolute top-[30%] "
+        className="text-center text-white absolute top-[30%] px-10"
         style={{
           fontSize: "18px",
         }}

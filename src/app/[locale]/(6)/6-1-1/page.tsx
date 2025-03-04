@@ -16,7 +16,7 @@ const Page6_1_1 = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center relative">
       <motion.div
-        className="text-center text-base text-white absolute top-[80%] w-2/3"
+        className="text-center text-base text-white absolute top-[80%] w-2/3 font-light drop-shadow-text leading-[24.68px]"
         initial={{ opacity: 0, z: -20 }}
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
