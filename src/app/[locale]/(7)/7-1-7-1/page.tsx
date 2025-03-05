@@ -2,6 +2,7 @@
 import Bar from "@/components/ui/bar";
 import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
 import NextDisplay from "@/components/ui/nextDisplay";
+import { Season } from "@/lib/enum";
 import { getLocalStorageWithFallback } from "@/lib/localstorageUtils";
 import { getDynamicFontSize } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -11,7 +12,10 @@ import { useState, useEffect } from "react";
 const Page7_1_7_1 = () => {
   const t = useTranslations("7-1-7");
   const locale = useLocale();
-  const goal = getLocalStorageWithFallback("currentGoal", "Inspiring flame");
+  const goal = getLocalStorageWithFallback(
+    "currentGoal",
+    Season.InspiringFlames
+  );
   const translatedText = t(`1.${goal}`);
   const [textSize, setTextSize] = useState("1.25rem");
 
@@ -49,7 +53,7 @@ const Page7_1_7_1 = () => {
         <NextDisplay />
       </motion.div>
 
-      <DelayedFullScreenLink href="7-1-7-2" delay={2000} />
+      <DelayedFullScreenLink href="7-2" delay={2000} />
     </div>
   );
 };
