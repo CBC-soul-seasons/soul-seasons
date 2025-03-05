@@ -1,15 +1,16 @@
 "use client";
 import { useLogicCalculation } from "@/lib/logicCalculation/logicCalculation";
-import { seasonImg, Season } from "@/lib/enum";
+import { seasonImg, Season, Chapter } from "@/lib/enum";
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import DelayedFullScreenLink from "@/components/ui/DelayedFullScreenLink";
 
 const Scene7_1_4 = () => {
-  const { seasons } = useLogicCalculation();
+  const { seasons, chapter } = useLogicCalculation();
   const t = useTranslations(`7-1-4`);
   const locale = useLocale();
   const [blur, setBlur] = useState(true);
+  const [nextPage, setNextPage] = useState("7-1-7-1");
 
   // Remove blur effect after 1 second
   useEffect(() => {
@@ -17,6 +18,21 @@ const Scene7_1_4 = () => {
       setBlur(false);
     }, 1000);
   }, []);
+
+  useMemo(() => {
+    switch (chapter) {
+      case Chapter.Start:
+        setNextPage("7-1-7-1");
+        break;
+      case Chapter.Middle:
+        setNextPage("7-1-7-2");
+        break;
+      case Chapter.End:
+        setNextPage("7-1-7-3");
+        break;
+      default:
+    }
+  }, [chapter]);
 
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center">
@@ -28,10 +44,10 @@ const Scene7_1_4 = () => {
             <div className="text-[18px] font-bold h-auto flex flex-col items-center justify-center">
               {/* First Image with Blur Effect */}
               <img
-                src={seasonImg[seasons as keyof typeof seasonImg]["img"][0]}
+                src={seasonImg[seasons]["img"][0]}
                 alt="7-1-4"
-                className={`${seasonImg[seasons as keyof typeof seasonImg]["w"][0]} 
-                                   ${seasonImg[seasons as keyof typeof seasonImg]["h"][0]} 
+                className={`${seasonImg[seasons]["w"][0]} 
+                                   ${seasonImg[seasons]["h"][0]} 
                                    ${blur ? "filter blur-sm dissolve" : ""}`}
               />
               <p className={`${blur ? "filter blur-sm dissolve" : ""}`}>
@@ -121,7 +137,7 @@ const Scene7_1_4 = () => {
           </div>
         </div>
       )}
-      <DelayedFullScreenLink href="7-1-7-1" delay={2000} />
+      <DelayedFullScreenLink href={nextPage} delay={2000} />
     </section>
   );
 };
