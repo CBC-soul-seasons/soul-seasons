@@ -464,6 +464,16 @@ const Page7_3_3 = () => {
               className="rounded-lg"
             />
           </div>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/img/viewsonic.webp"
+              alt="QR Code"
+              width={275}
+              height={80}
+              objectFit="contain"
+              className="rounded-lg"
+            />
+          </div>
           <br />
           <p className="text-[12px] text-[#182649]">{t("p8.s2")}</p>
           <p className="text-[12px] text-[#182649]">{t("p8.s3")}</p>
