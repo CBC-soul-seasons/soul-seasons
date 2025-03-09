@@ -457,7 +457,7 @@ const Page7_3_3 = () => {
           <div className="flex items-center gap-4">
             <Image
               src="/7-3-3/Frame 121075737 (1).webp"
-              alt="QR Code"
+              alt="Spon"
               width={275}
               height={80}
               objectFit="contain"
@@ -467,7 +467,7 @@ const Page7_3_3 = () => {
           <div className="flex items-center gap-4">
             <Image
               src="/img/viewsonic.webp"
-              alt="QR Code"
+              alt="Spon"
               width={275}
               height={80}
               objectFit="contain"
