@@ -16,14 +16,16 @@ const Scene6_3Page3: React.FC = () => {
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
-      <div className="w-[200px] h-[200px] absolute bottom-[260px] left-[80px] rotate-90">
-        <Image
-          src="/background/fruit.webp"
-          fill
-          objectFit="contain"
-          alt="christmas-tree"
-        />
-      </div>
+      <div 
+        className="w-[200px] h-[200px] absolute bottom-[260px] left-[80px] rotate-90">
+          <Image
+            src="/background/fruit.webp"
+            fill
+            objectFit="contain"
+            alt="christmas-tree"
+            priority
+          />
+        </div>
       <motion.div
         className="absolute top-[73%]"
         initial={{ opacity: 0, y: 0 }}
