@@ -4,7 +4,8 @@
     "tap": "Tap to continue"
   },
   "0-1": {
-    "btn": "Start"
+    "btn": "Start",
+     "sponsor": "Supporter"
   },
   "0-2": {
     "title": "Trigger Warning",
@@ -58,7 +59,7 @@
   },
   "0-4-2": {
     "title": "What should we call you?",
-    "input": "within xx characters"
+    "input": "within 25 characters"
   },
   "0-5": {
     "p1": {

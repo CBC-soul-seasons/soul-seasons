@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import {getPotImages} from "@/lib/pots-config";
+import NextButton from "@/components/ui/NextButton";
 
 const Scene2_2Page2 = () => {
     const t = useTranslations('2-2-2');
@@ -178,12 +179,13 @@ const Scene2_2Page2 = () => {
                 className="relative flex justify-center items-center h-[300px] w-[300px] mx-auto"
             >
                 <div className="flex justify-center w-full">
-                    <button
-                        className={`font-bold ${clicks === 3 ? 'bg-primaryblue': 'bg-primaryGrey'} w-[173px] h-[55px] rounded-lg text-white font-bold`}
-                        onClick={() => clicks === 3 && router.push(`/${locale}/2-2-4`)}
+                    <NextButton
+                        disabled={clicks < 3}
+                        label={t("btn")}
+                        url="2-2-4"
                     >
-                        {t("btn")}
-                    </button>
+                        
+                    </NextButton>
                 </div>
             </motion.div>
         </section>
