@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "@/i18n/routing";
 
@@ -14,6 +14,8 @@ const Scene5_2Page4: React.FC = () => {
   const [timeoutCutoffId, setTimeoutCutoffId] = useState<NodeJS.Timeout | null>(
     null
   );
+  const timeoutIdRef = useRef(timeoutId);
+  timeoutIdRef.current = timeoutId;
 
   return (
     <div
@@ -21,27 +23,36 @@ const Scene5_2Page4: React.FC = () => {
       onClick={() => {
         setClickCount((prev) => prev + 1);
         const currentClickCount = clickCount;
+        let newTimeoutCutoffId: NodeJS.Timeout | null = null;
 
+        if (!timeoutCutoffId) {
+          newTimeoutCutoffId = setTimeout(() => {
+            if (timeoutIdRef.current) {
+              clearTimeout(timeoutIdRef.current);
+            }
+            if (path === "/5-2-4") {
+              router.push("/5-2-7");
+            }
+          }, 15000);
+          setTimeoutCutoffId(newTimeoutCutoffId);
+        }
         if (timeoutId) {
           clearTimeout(timeoutId);
         }
         const newTimeoutId = setTimeout(() => {
-          if (currentClickCount === clickCount && path === "/5-2-4") {
-            router.push("/5-2-7");
+          if (currentClickCount === clickCount) {
+            if (newTimeoutCutoffId) {
+              clearTimeout(newTimeoutCutoffId);
+            }
+            if (timeoutCutoffId) {
+              clearTimeout(timeoutCutoffId);
+            }
+            if (path === "/5-2-4") {
+              router.push("/5-2-7");
+            }
           }
         }, 3000);
         setTimeoutId(newTimeoutId);
-        // clear timeoutId after 15 seconds
-        const newTimeoutCutoffId = setTimeout(() => {
-          // console.log("path", path);
-          // if (timeoutId) {
-          //   clearTimeout(timeoutId);
-          // }
-          if (path === "/5-2-4") {
-            router.push("/5-2-7");
-          }
-        }, 15000);
-        setTimeoutCutoffId(newTimeoutCutoffId);
       }}
     >
       <div
