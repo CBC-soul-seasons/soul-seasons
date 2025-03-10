@@ -464,11 +464,11 @@ const Page7_3_3 = () => {
               className="rounded-lg"
             />
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex justify-end pr-0 pt-1 gap-4">
             <Image
               src="/img/viewsonic.webp"
               alt="Spon"
-              width={275}
+              width={130}
               height={80}
               objectFit="contain"
               className="rounded-lg"
