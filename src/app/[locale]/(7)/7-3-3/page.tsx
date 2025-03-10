@@ -466,19 +466,9 @@ const Page7_3_3 = () => {
           <br />
           <div className="flex items-center gap-4">
             <Image
-              src="/7-3-3/Frame 121075737 (1).webp"
+              src="/img/sponsored.webp"
               alt="Spon"
               width={275}
-              height={80}
-              objectFit="contain"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="flex justify-end pr-0 pt-1 gap-4">
-            <Image
-              src="/img/viewsonic.webp"
-              alt="Spon"
-              width={130}
               height={80}
               objectFit="contain"
               className="rounded-lg"
