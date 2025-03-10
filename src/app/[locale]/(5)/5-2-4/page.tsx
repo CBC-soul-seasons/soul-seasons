@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "@/i18n/routing";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 const Scene5_2Page4: React.FC = () => {
   const t = useTranslations("5-2-4");
   const router = useRouter();
+  const path = usePathname();
   const [clickCount, setClickCount] = useState(0);
   const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
+  const [timeoutCutoffId, setTimeoutCutoffId] = useState<NodeJS.Timeout | null>(
+    null
+  );
 
   return (
     <div
@@ -22,15 +26,22 @@ const Scene5_2Page4: React.FC = () => {
           clearTimeout(timeoutId);
         }
         const newTimeoutId = setTimeout(() => {
-          if (currentClickCount === clickCount) {
+          if (currentClickCount === clickCount && path === "/5-2-4") {
             router.push("/5-2-7");
           }
         }, 3000);
         setTimeoutId(newTimeoutId);
-
-        setTimeout(() => {
-          router.push("/5-2-7");
+        // clear timeoutId after 15 seconds
+        const newTimeoutCutoffId = setTimeout(() => {
+          // console.log("path", path);
+          // if (timeoutId) {
+          //   clearTimeout(timeoutId);
+          // }
+          if (path === "/5-2-4") {
+            router.push("/5-2-7");
+          }
         }, 15000);
+        setTimeoutCutoffId(newTimeoutCutoffId);
       }}
     >
       <div
