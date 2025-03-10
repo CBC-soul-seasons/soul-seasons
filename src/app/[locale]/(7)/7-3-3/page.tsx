@@ -51,9 +51,19 @@ const Page7_3_3 = () => {
         initial={{ opacity: 0, z: -20 }}
         animate={{ opacity: 1, z: 0, transition: { duration: 1, delay: 1 } }}
       >
-        <p>{t("p2.s1")}</p>
-        <p>{t("p2.s2")}</p>
+        <p>
+          {t("p2.s1")}
+          <a
+            href="https://www.zipeventapp.com/e/Soul-Seasons"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            {t("p2.s2")}
+          </a>
+        </p>
         <p>{t("p2.s3")}</p>
+        <p>{t("p2.s4")}</p>
       </motion.div>
       <motion.div
         className="relative w-[361px] h-[530px] bg-white rounded-2xl shadow-lg p-6 overflow-y-auto custom-scrollbar overflow-x-hidden "

@@ -1020,9 +1020,10 @@
       "s18": "here."
     },
     "p2": {
-      "s1": "Book your tickets now at [ticketing channel] ",
-      "s2": "and join us in a journey of self-discovery ",
-      "s3": "through the changing seasons!"
+      "s1": "Book your tickets now at  ",
+      "s2": "ticketing channel",
+      "s3": "and join us in a journey of self-discovery ",
+      "s4": "through the changing seasons!"
     },
     "p3": {
       "s1": "MERCHANDISE",
@@ -1051,7 +1052,7 @@
       "s2": "“Anywheel connecting people connecting places”"
     },
     "p8": {
-      "s1": "SPONSERED BY",
+      "s1": "SPONSORED BY",
       "s2": "Are you interested in",
       "s3": "sponsoring/ collaborating with us?"
     },
