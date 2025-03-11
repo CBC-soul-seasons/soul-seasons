@@ -33,7 +33,12 @@ const Scene7_2: React.FC = () => {
     if (!result) {
       return;
     }
-    const dataBlob = await (await fetch(result)).blob();
+
+    const r2BaseUrl = "https://pub-f1dbf52f9b554de3865bdaf4633e1925.r2.dev";
+    const directUrl = new URL(result, r2BaseUrl).toString();
+
+    const response = await fetch(directUrl);
+    const dataBlob = await response.blob();
 
     const image = new File([dataBlob], DOWNLOAD_FILENAME, {
       type: dataBlob.type,
