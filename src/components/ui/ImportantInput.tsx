@@ -7,13 +7,17 @@ type Props = {
   setName: (value: string) => void;
 };
 
+const maxCount = 25; // Maximum character count
+
 const NameInput: React.FC<Props> = ({ placeholder, name, setName }) => {
   useEffect(() => {
     localStorage.setItem("importantPerson", name);
   }, [name]);
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
-    setName(e.target.value);
+    if (e.target.value.length <= maxCount) {
+      setName(e.target.value);
+    }
   };
 
   return (
